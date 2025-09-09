@@ -1,9 +1,9 @@
 import numpy as np
 
-import matrix
+from cymatrix import Matrix2D, Matrix3D
 
 def test_matrix_2d_square():
-    m2 = matrix.Matrix2D(3,3)
+    m2 = Matrix2D(3,3)
 
     m2.set(0, 0, 1.5)
     m2.set(1, 1, 1.5)
@@ -22,7 +22,7 @@ def test_matrix_2d_square():
     ])).all()
 
 def test_matrix_2d_rect():
-    m2 = matrix.Matrix2D(2,3)
+    m2 = Matrix2D(2,3)
 
     m2.set(0, 0, 1.5)
     m2.set(1, 1, 1.5)
@@ -40,7 +40,7 @@ def test_matrix_2d_rect():
 
 
 def test_matrix_3d_basic():
-    m3 = matrix.Matrix3D(2, 3, 4)
+    m3 = Matrix3D(2, 3, 4)
     
     # Test element access
     m3.set(0, 0, 0, 1.5)
@@ -54,7 +54,7 @@ def test_matrix_3d_basic():
 
 
 def test_matrix_3d_numpy_integration():
-    m3 = matrix.Matrix3D(2, 3, 4)
+    m3 = Matrix3D(2, 3, 4)
     
     # Set some values
     m3.set(0, 0, 0, 1.0)
@@ -75,7 +75,7 @@ def test_matrix_3d_numpy_integration():
 
 
 def test_matrix_3d_memoryview():
-    m3 = matrix.Matrix3D(2, 2, 2)
+    m3 = Matrix3D(2, 2, 2)
     
     # Set diagonal values
     m3.set(0, 0, 0, 1.0)
@@ -93,8 +93,8 @@ def test_matrix_3d_memoryview():
 
 
 def test_matrix_2d_dunder_methods():
-    m1 = matrix.Matrix2D(2, 2)
-    m2 = matrix.Matrix2D(2, 2)
+    m1 = Matrix2D(2, 2)
+    m2 = Matrix2D(2, 2)
     
     # Test __setitem__ and __getitem__
     m1[0, 0] = 1.0
@@ -125,7 +125,7 @@ def test_matrix_2d_dunder_methods():
     assert m5[1, 1] == 8.0  # 4.0 * 2.0
     
     # Test matrix multiplication
-    m6 = matrix.Matrix2D(2, 2)
+    m6 = Matrix2D(2, 2)
     m6[0, 0] = 1.0
     m6[0, 1] = 0.0
     m6[1, 0] = 0.0
@@ -139,8 +139,8 @@ def test_matrix_2d_dunder_methods():
 
 
 def test_matrix_3d_dunder_methods():
-    m1 = matrix.Matrix3D(2, 2, 2)
-    m2 = matrix.Matrix3D(2, 2, 2)
+    m1 = Matrix3D(2, 2, 2)
+    m2 = Matrix3D(2, 2, 2)
     
     # Test __setitem__ and __getitem__
     m1[0, 0, 0] = 1.0
@@ -172,8 +172,8 @@ def test_matrix_3d_dunder_methods():
 
 
 def test_matrix_2d_extended_dunder_methods():
-    m1 = matrix.Matrix2D(2, 2)
-    m2 = matrix.Matrix2D(2, 2)
+    m1 = Matrix2D(2, 2)
+    m2 = Matrix2D(2, 2)
     
     # Setup matrices
     m1[0, 0] = 2.0
@@ -204,7 +204,7 @@ def test_matrix_2d_extended_dunder_methods():
     assert m4[1, 1] == 4.0  # 8.0 / 2.0
     
     # Test __eq__ and __ne__
-    m5 = matrix.Matrix2D(2, 2)
+    m5 = Matrix2D(2, 2)
     m5[0, 0] = 2.0
     m5[0, 1] = 4.0
     m5[1, 0] = 6.0
@@ -221,7 +221,7 @@ def test_matrix_2d_extended_dunder_methods():
     assert m1 >= m2
     
     # Test __abs__
-    m_neg = matrix.Matrix2D(2, 2)
+    m_neg = Matrix2D(2, 2)
     m_neg[0, 0] = -2.0
     m_neg[1, 1] = -3.0
     m_abs = abs(m_neg)
@@ -230,8 +230,8 @@ def test_matrix_2d_extended_dunder_methods():
 
 
 def test_matrix_3d_extended_dunder_methods():
-    m1 = matrix.Matrix3D(2, 2, 2)
-    m2 = matrix.Matrix3D(2, 2, 2)
+    m1 = Matrix3D(2, 2, 2)
+    m2 = Matrix3D(2, 2, 2)
     
     # Setup matrices
     m1[0, 0, 0] = 2.0
@@ -257,7 +257,7 @@ def test_matrix_3d_extended_dunder_methods():
     assert m4[1, 1, 1] == 2.0  # 4.0 / 2.0
     
     # Test __eq__ and __ne__
-    m5 = matrix.Matrix3D(2, 2, 2)
+    m5 = Matrix3D(2, 2, 2)
     m5[0, 0, 0] = 2.0
     m5[1, 1, 1] = 4.0
     
@@ -266,8 +266,8 @@ def test_matrix_3d_extended_dunder_methods():
     assert m1 != m2
     
     # Test comparison operators (setup matrices where all elements satisfy condition)
-    m_small = matrix.Matrix3D(2, 2, 2)
-    m_large = matrix.Matrix3D(2, 2, 2)
+    m_small = Matrix3D(2, 2, 2)
+    m_large = Matrix3D(2, 2, 2)
     
     # Fill all elements to satisfy comparison
     for i in range(2):
@@ -282,7 +282,7 @@ def test_matrix_3d_extended_dunder_methods():
     assert m_large >= m_small
     
     # Test __abs__
-    m_neg = matrix.Matrix3D(2, 2, 2)
+    m_neg = Matrix3D(2, 2, 2)
     m_neg[0, 0, 0] = -3.0
     m_neg[1, 1, 1] = -5.0
     m_abs = abs(m_neg)
@@ -291,7 +291,7 @@ def test_matrix_3d_extended_dunder_methods():
 
 
 def test_division_by_zero():
-    m = matrix.Matrix2D(2, 2)
+    m = Matrix2D(2, 2)
     m[0, 0] = 1.0
     
     try:
@@ -300,7 +300,7 @@ def test_division_by_zero():
     except ZeroDivisionError:
         pass  # Expected
     
-    m3 = matrix.Matrix3D(2, 2, 2)
+    m3 = Matrix3D(2, 2, 2)
     m3[0, 0, 0] = 1.0
     
     try:
@@ -311,8 +311,8 @@ def test_division_by_zero():
 
 
 def test_matrix_2d_apply_method():
-    m1 = matrix.Matrix2D(2, 2)
-    m2 = matrix.Matrix2D(2, 2)
+    m1 = Matrix2D(2, 2)
+    m2 = Matrix2D(2, 2)
     
     # Setup matrices
     m1[0, 0] = 1.0
@@ -348,8 +348,8 @@ def test_matrix_2d_apply_method():
 
 
 def test_matrix_3d_apply_method():
-    m1 = matrix.Matrix3D(2, 2, 2)
-    m2 = matrix.Matrix3D(2, 2, 2)
+    m1 = Matrix3D(2, 2, 2)
+    m2 = Matrix3D(2, 2, 2)
     
     # Setup matrices
     m1[0, 0, 0] = 1.0
@@ -386,7 +386,7 @@ def test_matrix_3d_apply_method():
 
 if __name__ == '__main__':
 
-    m3 = matrix.Matrix3D(2, 2, 2)
+    m3 = Matrix3D(2, 2, 2)
     
     # Set diagonal values
     m3.set(0, 0, 0, 1.0)

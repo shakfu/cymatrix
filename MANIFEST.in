@@ -1,0 +1,7 @@
+include src/cymatrix/*.pyx
+include src/cymatrix/*.pxd
+include src/cymatrix/*.pxi
+include src/cymatrix/*.h
+include src/cymatrix/py.typed
+exclude src/cymatrix/*.c
+exclude src/cymatrix/*.cpp

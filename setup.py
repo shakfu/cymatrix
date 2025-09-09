@@ -31,8 +31,8 @@ DEFINE_MACROS = []
 # Extension Configuration
 
 extensions = [
-    Extension("matrix", 
-        sources = ["matrix.pyx"],
+    Extension("cymatrix.matrix", 
+        sources = ["src/cymatrix/matrix.pyx"],
         libraries=LIBRARIES,
         include_dirs=INCLUDE_DIRS,
         library_dirs=LIBRARY_DIRS,
@@ -67,4 +67,5 @@ setup(
             'warn.unused_result': False, # default: False
         },
     ),
+    package_dir={"": "src"},
 )

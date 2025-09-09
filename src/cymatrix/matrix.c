@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "matrix",
+        "name": "cymatrix.matrix",
         "sources": [
-            "matrix.pyx"
+            "src/cymatrix/matrix.pyx"
         ]
     },
-    "module_name": "matrix"
+    "module_name": "cymatrix.matrix"
 }
 END: Cython Metadata */
 
@@ -1128,8 +1128,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__matrix
-#define __PYX_HAVE_API__matrix
+#define __PYX_HAVE__cymatrix__matrix
+#define __PYX_HAVE_API__cymatrix__matrix
 /* Early includes */
 #include <string.h>
 #include <stdlib.h>
@@ -1340,7 +1340,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char* const __pyx_f[] = {
-  "matrix.pyx",
+  "src/cymatrix/matrix.pyx",
   "<stringsource>",
 };
 /* #### Code section: utility_code_proto_before_types ### */
@@ -1508,51 +1508,51 @@ static const char* const __pyx_f[] = {
 /* #### Code section: type_declarations ### */
 
 /*--- Type declarations ---*/
-struct __pyx_obj_6matrix_Matrix2D;
-struct __pyx_obj_6matrix_Matrix3D;
-struct __pyx_obj_6matrix___pyx_scope_struct____mul__;
-struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__;
-struct __pyx_t_6matrix_matrix_2d;
-typedef struct __pyx_t_6matrix_matrix_2d __pyx_t_6matrix_matrix_2d;
-struct __pyx_t_6matrix_matrix_3d;
-typedef struct __pyx_t_6matrix_matrix_3d __pyx_t_6matrix_matrix_3d;
+struct __pyx_obj_8cymatrix_6matrix_Matrix2D;
+struct __pyx_obj_8cymatrix_6matrix_Matrix3D;
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__;
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__;
+struct __pyx_t_8cymatrix_6matrix_matrix_2d;
+typedef struct __pyx_t_8cymatrix_6matrix_matrix_2d __pyx_t_8cymatrix_6matrix_matrix_2d;
+struct __pyx_t_8cymatrix_6matrix_matrix_3d;
+typedef struct __pyx_t_8cymatrix_6matrix_matrix_3d __pyx_t_8cymatrix_6matrix_matrix_3d;
 
-struct __pyx_t_6matrix_matrix_2d {
+struct __pyx_t_8cymatrix_6matrix_matrix_2d {
   double *data;
   int rows;
   int cols;
 };
 
-struct __pyx_t_6matrix_matrix_3d {
+struct __pyx_t_8cymatrix_6matrix_matrix_3d {
   double *data;
   int rows;
   int cols;
   int planes;
 };
 
-struct __pyx_obj_6matrix_Matrix2D {
+struct __pyx_obj_8cymatrix_6matrix_Matrix2D {
   PyObject_HEAD
-  struct __pyx_vtabstruct_6matrix_Matrix2D *__pyx_vtab;
-  __pyx_t_6matrix_matrix_2d *m;
+  struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *__pyx_vtab;
+  __pyx_t_8cymatrix_6matrix_matrix_2d *m;
   int owner;
 };
 
 
-struct __pyx_obj_6matrix_Matrix3D {
+struct __pyx_obj_8cymatrix_6matrix_Matrix3D {
   PyObject_HEAD
-  struct __pyx_vtabstruct_6matrix_Matrix3D *__pyx_vtab;
-  __pyx_t_6matrix_matrix_3d *m;
+  struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *__pyx_vtab;
+  __pyx_t_8cymatrix_6matrix_matrix_3d *m;
   int owner;
 };
 
 
-struct __pyx_obj_6matrix___pyx_scope_struct____mul__ {
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ {
   PyObject_HEAD
   double __pyx_v_scalar;
 };
 
 
-struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ {
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ {
   PyObject_HEAD
   double __pyx_v_scalar;
 };
@@ -1560,23 +1560,23 @@ struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ {
 
 
 
-struct __pyx_vtabstruct_6matrix_Matrix2D {
-  size_t (*_offset)(struct __pyx_obj_6matrix_Matrix2D *, int, int);
-  double (*get)(struct __pyx_obj_6matrix_Matrix2D *, int, int, int __pyx_skip_dispatch);
-  void (*set)(struct __pyx_obj_6matrix_Matrix2D *, int, int, double, int __pyx_skip_dispatch);
+struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D {
+  size_t (*_offset)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int);
+  double (*get)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int, int __pyx_skip_dispatch);
+  void (*set)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int, double, int __pyx_skip_dispatch);
 };
-static struct __pyx_vtabstruct_6matrix_Matrix2D *__pyx_vtabptr_6matrix_Matrix2D;
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix2D__offset(struct __pyx_obj_6matrix_Matrix2D *, int, int);
+static struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *__pyx_vtabptr_8cymatrix_6matrix_Matrix2D;
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix2D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int);
 
 
 
-struct __pyx_vtabstruct_6matrix_Matrix3D {
-  size_t (*_offset)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int);
-  double (*get)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int, int __pyx_skip_dispatch);
-  void (*set)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int, double, int __pyx_skip_dispatch);
+struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D {
+  size_t (*_offset)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int);
+  double (*get)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int, int __pyx_skip_dispatch);
+  void (*set)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int, double, int __pyx_skip_dispatch);
 };
-static struct __pyx_vtabstruct_6matrix_Matrix3D *__pyx_vtabptr_6matrix_Matrix3D;
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix3D__offset(struct __pyx_obj_6matrix_Matrix3D *, int, int, int);
+static struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *__pyx_vtabptr_8cymatrix_6matrix_Matrix3D;
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int);
 /* #### Code section: utility_code_proto ### */
 
 /* --- Runtime support code (head) --- */
@@ -2376,25 +2376,25 @@ static int __Pyx_State_RemoveModule(void*);
 #define __PYX_ABI_MODULE_NAME "_cython_" CYTHON_ABI
 #define __PYX_TYPE_MODULE_PREFIX __PYX_ABI_MODULE_NAME "."
 
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix2D__offset(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j); /* proto*/
-static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_skip_dispatch); /* proto*/
-static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value, int __pyx_skip_dispatch); /* proto*/
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix3D__offset(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k); /* proto*/
-static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, int __pyx_skip_dispatch); /* proto*/
-static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value, int __pyx_skip_dispatch); /* proto*/
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix2D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j); /* proto*/
+static double __pyx_f_8cymatrix_6matrix_8Matrix2D_get(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_skip_dispatch); /* proto*/
+static void __pyx_f_8cymatrix_6matrix_8Matrix2D_set(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value, int __pyx_skip_dispatch); /* proto*/
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k); /* proto*/
+static double __pyx_f_8cymatrix_6matrix_8Matrix3D_get(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, int __pyx_skip_dispatch); /* proto*/
+static void __pyx_f_8cymatrix_6matrix_8Matrix3D_set(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value, int __pyx_skip_dispatch); /* proto*/
 
 /* Module declarations from "libc.string" */
 
 /* Module declarations from "libc.stdlib" */
 
-/* Module declarations from "matrix" */
+/* Module declarations from "cymatrix.matrix" */
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "matrix"
-extern int __pyx_module_is_main_matrix;
-int __pyx_module_is_main_matrix = 0;
+#define __Pyx_MODULE_NAME "cymatrix.matrix"
+extern int __pyx_module_is_main_cymatrix__matrix;
+int __pyx_module_is_main_cymatrix__matrix = 0;
 
-/* Implementation of "matrix" */
+/* Implementation of "cymatrix.matrix" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_MemoryError;
 static PyObject *__pyx_builtin_ValueError;
@@ -2446,7 +2446,6 @@ static const char __pyx_k_value[] = "value";
 static const char __pyx_k_enable[] = "enable";
 static const char __pyx_k_func_2[] = "func";
 static const char __pyx_k_lambda[] = "<lambda>";
-static const char __pyx_k_matrix[] = "matrix";
 static const char __pyx_k_module[] = "__module__";
 static const char __pyx_k_offset[] = "offset";
 static const char __pyx_k_planes[] = "planes";
@@ -2474,7 +2473,6 @@ static const char __pyx_k_IndexError[] = "IndexError";
 static const char __pyx_k_Matrix2D_2[] = "Matrix2D";
 static const char __pyx_k_Matrix3D_2[] = "Matrix3D";
 static const char __pyx_k_ValueError[] = "ValueError";
-static const char __pyx_k_matrix_pyx[] = "matrix.pyx";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_result_val[] = "result_val";
 static const char __pyx_k_A_t2U_4xq_A[] = "\200A\330\010\017\210t\2202\220U\230!\2304\230x\240q\250\002\250\"\250A";
@@ -2490,6 +2488,7 @@ static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
 static const char __pyx_k_Matrix2D_apply[] = "Matrix2D.apply";
 static const char __pyx_k_Matrix3D_apply[] = "Matrix3D.apply";
 static const char __pyx_k_Matrix3D_offset[] = "Matrix3D.offset";
+static const char __pyx_k_cymatrix_matrix[] = "cymatrix.matrix";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_ZeroDivisionError[] = "ZeroDivisionError";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
@@ -2501,6 +2500,7 @@ static const char __pyx_k_sub___locals_lambda[] = "__sub__.<locals>.<lambda>";
 static const char __pyx_k_uninitialized_matrix[] = "uninitialized matrix";
 static const char __pyx_k_Matrix2D_apply_inplace[] = "Matrix2D.apply_inplace";
 static const char __pyx_k_Matrix3D_apply_inplace[] = "Matrix3D.apply_inplace";
+static const char __pyx_k_src_cymatrix_matrix_pyx[] = "src/cymatrix/matrix.pyx";
 static const char __pyx_k_Matrix2D___reduce_cython[] = "Matrix2D.__reduce_cython__";
 static const char __pyx_k_Matrix3D___reduce_cython[] = "Matrix3D.__reduce_cython__";
 static const char __pyx_k_Matrix2D___setstate_cython[] = "Matrix2D.__setstate_cython__";
@@ -2519,81 +2519,81 @@ static const char __pyx_k_Note_that_Cython_is_deliberately[] = "Note that Cython
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 static const char __pyx_k_Matrix_dimensions_must_match_for_2[] = "Matrix dimensions must match for subtraction";
 /* #### Code section: decls ### */
-static int __pyx_pf_6matrix_8Matrix2D___cinit__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static void __pyx_pf_6matrix_8Matrix2D_2__dealloc__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static int __pyx_pf_6matrix_8Matrix2D_4__init__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols); /* proto */
-static int __pyx_pf_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags); /* proto */
-static void __pyx_pf_6matrix_8Matrix2D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices); /* proto */
-static int __pyx_pf_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D___cinit__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static void __pyx_pf_8cymatrix_6matrix_8Matrix2D_2__dealloc__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_4__init__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags); /* proto */
+static void __pyx_pf_8cymatrix_6matrix_8Matrix2D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_16__add__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_16__add__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_24__str__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static Py_ssize_t __pyx_pf_6matrix_8Matrix2D_26__len__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_38__le__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_24__str__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static Py_ssize_t __pyx_pf_8cymatrix_6matrix_8Matrix2D_26__len__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_38__le__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda3(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_50get(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_52set(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_6matrix_8Matrix3D___cinit__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static void __pyx_pf_6matrix_8Matrix3D_2__dealloc__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static int __pyx_pf_6matrix_8Matrix3D_4__init__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols, int __pyx_v_planes); /* proto */
-static int __pyx_pf_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags); /* proto */
-static void __pyx_pf_6matrix_8Matrix3D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices); /* proto */
-static int __pyx_pf_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_46apply(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_50get(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_52set(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D___cinit__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static void __pyx_pf_8cymatrix_6matrix_8Matrix3D_2__dealloc__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_4__init__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols, int __pyx_v_planes); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags); /* proto */
+static void __pyx_pf_8cymatrix_6matrix_8Matrix3D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices); /* proto */
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j, CYTHON_UNUSED PyObject *__pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_16__add__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_16__add__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda5(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j, CYTHON_UNUSED PyObject *__pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda6(PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j, CYTHON_UNUSED PyObject *__pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_22__str__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static Py_ssize_t __pyx_pf_6matrix_8Matrix3D_24__len__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_36__le__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_22__str__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static Py_ssize_t __pyx_pf_8cymatrix_6matrix_8Matrix3D_24__len__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_36__le__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
 static PyObject *__pyx_lambda_funcdef_lambda7(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j, CYTHON_UNUSED PyObject *__pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_48offset(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_row, int __pyx_v_col, int __pyx_v_plane); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_50get(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_52set(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6matrix_8Matrix3D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_6matrix_Matrix2D(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_6matrix_Matrix3D(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct____mul__(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct_1___mul__(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_44apply(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_48offset(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_row, int __pyx_v_col, int __pyx_v_plane); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_50get(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_52set(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_8cymatrix_6matrix_Matrix2D(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8cymatrix_6matrix_Matrix3D(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct____mul__(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct_1___mul__(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 /* SmallCodeConfig */
@@ -2632,14 +2632,14 @@ typedef struct {
   #ifdef __Pyx_Coroutine_USED
   PyTypeObject *__pyx_CoroutineType;
   #endif
-  PyObject *__pyx_type_6matrix_Matrix2D;
-  PyObject *__pyx_type_6matrix_Matrix3D;
-  PyObject *__pyx_type_6matrix___pyx_scope_struct____mul__;
-  PyObject *__pyx_type_6matrix___pyx_scope_struct_1___mul__;
-  PyTypeObject *__pyx_ptype_6matrix_Matrix2D;
-  PyTypeObject *__pyx_ptype_6matrix_Matrix3D;
-  PyTypeObject *__pyx_ptype_6matrix___pyx_scope_struct____mul__;
-  PyTypeObject *__pyx_ptype_6matrix___pyx_scope_struct_1___mul__;
+  PyObject *__pyx_type_8cymatrix_6matrix_Matrix2D;
+  PyObject *__pyx_type_8cymatrix_6matrix_Matrix3D;
+  PyObject *__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul__;
+  PyObject *__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul__;
+  PyTypeObject *__pyx_ptype_8cymatrix_6matrix_Matrix2D;
+  PyTypeObject *__pyx_ptype_8cymatrix_6matrix_Matrix3D;
+  PyTypeObject *__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__;
+  PyTypeObject *__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__;
   __Pyx_CachedCFunction __pyx_umethod_PyDict_Type_pop;
   PyObject *__pyx_tuple[1];
   PyObject *__pyx_codeobj_tab[21];
@@ -2655,13 +2655,13 @@ PyObject *__Pyx_CachedMethodType;
 
 
 #if CYTHON_USE_FREELISTS
-struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *__pyx_freelist_6matrix___pyx_scope_struct____mul__[8];
-int __pyx_freecount_6matrix___pyx_scope_struct____mul__;
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct____mul__[8];
+int __pyx_freecount_8cymatrix_6matrix___pyx_scope_struct____mul__;
 #endif
 
 #if CYTHON_USE_FREELISTS
-struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *__pyx_freelist_6matrix___pyx_scope_struct_1___mul__[8];
-int __pyx_freecount_6matrix___pyx_scope_struct_1___mul__;
+struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct_1___mul__[8];
+int __pyx_freecount_8cymatrix_6matrix___pyx_scope_struct_1___mul__;
 #endif
 /* CodeObjectCache.module_state_decls */
 struct __Pyx_CodeObjectCache __pyx_code_cache;
@@ -2741,51 +2741,51 @@ static __pyx_mstatetype * const __pyx_mstate_global = &__pyx_mstate_global_stati
 #define __pyx_n_u_cline_in_traceback __pyx_string_tab[47]
 #define __pyx_n_u_col __pyx_string_tab[48]
 #define __pyx_n_u_cols __pyx_string_tab[49]
-#define __pyx_kp_u_disable __pyx_string_tab[50]
-#define __pyx_kp_u_enable __pyx_string_tab[51]
-#define __pyx_n_u_eq __pyx_string_tab[52]
-#define __pyx_n_u_func __pyx_string_tab[53]
-#define __pyx_n_u_func_2 __pyx_string_tab[54]
-#define __pyx_kp_u_gc __pyx_string_tab[55]
-#define __pyx_n_u_get __pyx_string_tab[56]
-#define __pyx_n_u_getstate __pyx_string_tab[57]
-#define __pyx_n_u_i __pyx_string_tab[58]
-#define __pyx_n_u_is_coroutine __pyx_string_tab[59]
-#define __pyx_kp_u_isenabled __pyx_string_tab[60]
-#define __pyx_n_u_j __pyx_string_tab[61]
-#define __pyx_n_u_k __pyx_string_tab[62]
-#define __pyx_n_u_lambda __pyx_string_tab[63]
-#define __pyx_n_u_main __pyx_string_tab[64]
-#define __pyx_n_u_matrix __pyx_string_tab[65]
-#define __pyx_kp_u_matrix_pyx __pyx_string_tab[66]
-#define __pyx_n_u_module __pyx_string_tab[67]
-#define __pyx_n_u_mul __pyx_string_tab[68]
-#define __pyx_n_u_mul___locals_lambda __pyx_string_tab[69]
-#define __pyx_n_u_name __pyx_string_tab[70]
-#define __pyx_kp_u_no_default___reduce___due_to_non __pyx_string_tab[71]
-#define __pyx_n_u_offset __pyx_string_tab[72]
-#define __pyx_n_u_other __pyx_string_tab[73]
-#define __pyx_n_u_other_val __pyx_string_tab[74]
-#define __pyx_n_u_plane __pyx_string_tab[75]
-#define __pyx_n_u_planes __pyx_string_tab[76]
-#define __pyx_n_u_pop __pyx_string_tab[77]
-#define __pyx_n_u_pyx_state __pyx_string_tab[78]
-#define __pyx_n_u_pyx_vtable __pyx_string_tab[79]
-#define __pyx_n_u_qualname __pyx_string_tab[80]
-#define __pyx_n_u_range __pyx_string_tab[81]
-#define __pyx_n_u_reduce __pyx_string_tab[82]
-#define __pyx_n_u_reduce_cython __pyx_string_tab[83]
-#define __pyx_n_u_reduce_ex __pyx_string_tab[84]
-#define __pyx_n_u_result __pyx_string_tab[85]
-#define __pyx_n_u_result_val __pyx_string_tab[86]
-#define __pyx_n_u_row __pyx_string_tab[87]
-#define __pyx_n_u_rows __pyx_string_tab[88]
-#define __pyx_n_u_self __pyx_string_tab[89]
-#define __pyx_n_u_self_val __pyx_string_tab[90]
-#define __pyx_n_u_set __pyx_string_tab[91]
-#define __pyx_n_u_set_name __pyx_string_tab[92]
-#define __pyx_n_u_setstate __pyx_string_tab[93]
-#define __pyx_n_u_setstate_cython __pyx_string_tab[94]
+#define __pyx_n_u_cymatrix_matrix __pyx_string_tab[50]
+#define __pyx_kp_u_disable __pyx_string_tab[51]
+#define __pyx_kp_u_enable __pyx_string_tab[52]
+#define __pyx_n_u_eq __pyx_string_tab[53]
+#define __pyx_n_u_func __pyx_string_tab[54]
+#define __pyx_n_u_func_2 __pyx_string_tab[55]
+#define __pyx_kp_u_gc __pyx_string_tab[56]
+#define __pyx_n_u_get __pyx_string_tab[57]
+#define __pyx_n_u_getstate __pyx_string_tab[58]
+#define __pyx_n_u_i __pyx_string_tab[59]
+#define __pyx_n_u_is_coroutine __pyx_string_tab[60]
+#define __pyx_kp_u_isenabled __pyx_string_tab[61]
+#define __pyx_n_u_j __pyx_string_tab[62]
+#define __pyx_n_u_k __pyx_string_tab[63]
+#define __pyx_n_u_lambda __pyx_string_tab[64]
+#define __pyx_n_u_main __pyx_string_tab[65]
+#define __pyx_n_u_module __pyx_string_tab[66]
+#define __pyx_n_u_mul __pyx_string_tab[67]
+#define __pyx_n_u_mul___locals_lambda __pyx_string_tab[68]
+#define __pyx_n_u_name __pyx_string_tab[69]
+#define __pyx_kp_u_no_default___reduce___due_to_non __pyx_string_tab[70]
+#define __pyx_n_u_offset __pyx_string_tab[71]
+#define __pyx_n_u_other __pyx_string_tab[72]
+#define __pyx_n_u_other_val __pyx_string_tab[73]
+#define __pyx_n_u_plane __pyx_string_tab[74]
+#define __pyx_n_u_planes __pyx_string_tab[75]
+#define __pyx_n_u_pop __pyx_string_tab[76]
+#define __pyx_n_u_pyx_state __pyx_string_tab[77]
+#define __pyx_n_u_pyx_vtable __pyx_string_tab[78]
+#define __pyx_n_u_qualname __pyx_string_tab[79]
+#define __pyx_n_u_range __pyx_string_tab[80]
+#define __pyx_n_u_reduce __pyx_string_tab[81]
+#define __pyx_n_u_reduce_cython __pyx_string_tab[82]
+#define __pyx_n_u_reduce_ex __pyx_string_tab[83]
+#define __pyx_n_u_result __pyx_string_tab[84]
+#define __pyx_n_u_result_val __pyx_string_tab[85]
+#define __pyx_n_u_row __pyx_string_tab[86]
+#define __pyx_n_u_rows __pyx_string_tab[87]
+#define __pyx_n_u_self __pyx_string_tab[88]
+#define __pyx_n_u_self_val __pyx_string_tab[89]
+#define __pyx_n_u_set __pyx_string_tab[90]
+#define __pyx_n_u_set_name __pyx_string_tab[91]
+#define __pyx_n_u_setstate __pyx_string_tab[92]
+#define __pyx_n_u_setstate_cython __pyx_string_tab[93]
+#define __pyx_kp_u_src_cymatrix_matrix_pyx __pyx_string_tab[94]
 #define __pyx_kp_u_stringsource __pyx_string_tab[95]
 #define __pyx_n_u_sub___locals_lambda __pyx_string_tab[96]
 #define __pyx_n_u_test __pyx_string_tab[97]
@@ -2812,14 +2812,14 @@ static CYTHON_SMALL_CODE int __pyx_m_clear(PyObject *m) {
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   __Pyx_State_RemoveModule(NULL);
   #endif
-  Py_CLEAR(clear_module_state->__pyx_ptype_6matrix_Matrix2D);
-  Py_CLEAR(clear_module_state->__pyx_type_6matrix_Matrix2D);
-  Py_CLEAR(clear_module_state->__pyx_ptype_6matrix_Matrix3D);
-  Py_CLEAR(clear_module_state->__pyx_type_6matrix_Matrix3D);
-  Py_CLEAR(clear_module_state->__pyx_ptype_6matrix___pyx_scope_struct____mul__);
-  Py_CLEAR(clear_module_state->__pyx_type_6matrix___pyx_scope_struct____mul__);
-  Py_CLEAR(clear_module_state->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__);
-  Py_CLEAR(clear_module_state->__pyx_type_6matrix___pyx_scope_struct_1___mul__);
+  Py_CLEAR(clear_module_state->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
+  Py_CLEAR(clear_module_state->__pyx_type_8cymatrix_6matrix_Matrix2D);
+  Py_CLEAR(clear_module_state->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
+  Py_CLEAR(clear_module_state->__pyx_type_8cymatrix_6matrix_Matrix3D);
+  Py_CLEAR(clear_module_state->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__);
+  Py_CLEAR(clear_module_state->__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul__);
+  Py_CLEAR(clear_module_state->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__);
+  Py_CLEAR(clear_module_state->__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul__);
   for (int i=0; i<1; ++i) { Py_CLEAR(clear_module_state->__pyx_tuple[i]); }
   for (int i=0; i<21; ++i) { Py_CLEAR(clear_module_state->__pyx_codeobj_tab[i]); }
   for (int i=0; i<101; ++i) { Py_CLEAR(clear_module_state->__pyx_string_tab[i]); }
@@ -2843,14 +2843,14 @@ static CYTHON_SMALL_CODE int __pyx_m_traverse(PyObject *m, visitproc visit, void
   #ifdef __Pyx_FusedFunction_USED
   Py_VISIT(traverse_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_VISIT(traverse_module_state->__pyx_ptype_6matrix_Matrix2D);
-  Py_VISIT(traverse_module_state->__pyx_type_6matrix_Matrix2D);
-  Py_VISIT(traverse_module_state->__pyx_ptype_6matrix_Matrix3D);
-  Py_VISIT(traverse_module_state->__pyx_type_6matrix_Matrix3D);
-  Py_VISIT(traverse_module_state->__pyx_ptype_6matrix___pyx_scope_struct____mul__);
-  Py_VISIT(traverse_module_state->__pyx_type_6matrix___pyx_scope_struct____mul__);
-  Py_VISIT(traverse_module_state->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__);
-  Py_VISIT(traverse_module_state->__pyx_type_6matrix___pyx_scope_struct_1___mul__);
+  Py_VISIT(traverse_module_state->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
+  Py_VISIT(traverse_module_state->__pyx_type_8cymatrix_6matrix_Matrix2D);
+  Py_VISIT(traverse_module_state->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
+  Py_VISIT(traverse_module_state->__pyx_type_8cymatrix_6matrix_Matrix3D);
+  Py_VISIT(traverse_module_state->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__);
+  Py_VISIT(traverse_module_state->__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul__);
+  Py_VISIT(traverse_module_state->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__);
+  Py_VISIT(traverse_module_state->__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul__);
   for (int i=0; i<1; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_tuple[i]); }
   for (int i=0; i<21; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_codeobj_tab[i]); }
   for (int i=0; i<101; ++i) { __Pyx_VISIT_CONST(traverse_module_state->__pyx_string_tab[i]); }
@@ -2861,8 +2861,8 @@ static CYTHON_SMALL_CODE int __pyx_m_traverse(PyObject *m, visitproc visit, void
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix2D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_6matrix_8Matrix2D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
@@ -2878,14 +2878,14 @@ static int __pyx_pw_6matrix_8Matrix2D_1__cinit__(PyObject *__pyx_v_self, PyObjec
   const Py_ssize_t __pyx_kwds_len = unlikely(__pyx_kwds) ? __Pyx_NumKwargs_VARARGS(__pyx_kwds) : 0;
   if (unlikely(__pyx_kwds_len < 0)) return -1;
   if (unlikely(__pyx_kwds_len > 0)) {__Pyx_RejectKeywords("__cinit__", __pyx_kwds); return -1;}
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D___cinit__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D___cinit__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix2D___cinit__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D___cinit__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   int __pyx_r;
 
   __pyx_v_self->m = NULL;
@@ -2900,19 +2900,19 @@ static int __pyx_pf_6matrix_8Matrix2D___cinit__(struct __pyx_obj_6matrix_Matrix2
 
 
 /* Python wrapper */
-static void __pyx_pw_6matrix_8Matrix2D_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_6matrix_8Matrix2D_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_8cymatrix_6matrix_8Matrix2D_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_8cymatrix_6matrix_8Matrix2D_3__dealloc__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_pf_6matrix_8Matrix2D_2__dealloc__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_pf_8cymatrix_6matrix_8Matrix2D_2__dealloc__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_6matrix_8Matrix2D_2__dealloc__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static void __pyx_pf_8cymatrix_6matrix_8Matrix2D_2__dealloc__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   int __pyx_t_1;
   int __pyx_t_2;
 
@@ -2936,8 +2936,8 @@ static void __pyx_pf_6matrix_8Matrix2D_2__dealloc__(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_rows;
   int __pyx_v_cols;
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
@@ -2997,11 +2997,11 @@ static int __pyx_pw_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_4__init__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_rows, __pyx_v_cols);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_4__init__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_rows, __pyx_v_cols);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -3011,14 +3011,14 @@ static int __pyx_pw_6matrix_8Matrix2D_5__init__(PyObject *__pyx_v_self, PyObject
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix2D_4__init__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_4__init__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols) {
   int __pyx_r;
   int __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  __pyx_v_self->m = ((__pyx_t_6matrix_matrix_2d *)malloc((sizeof(__pyx_t_6matrix_matrix_2d))));
+  __pyx_v_self->m = ((__pyx_t_8cymatrix_6matrix_matrix_2d *)malloc((sizeof(__pyx_t_8cymatrix_6matrix_matrix_2d))));
 
   __pyx_t_1 = (__pyx_v_self->m == NULL);
   if (unlikely(__pyx_t_1)) {
@@ -3040,7 +3040,7 @@ static int __pyx_pf_6matrix_8Matrix2D_4__init__(struct __pyx_obj_6matrix_Matrix2
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   return __pyx_r;
@@ -3048,21 +3048,21 @@ static int __pyx_pf_6matrix_8Matrix2D_4__init__(struct __pyx_obj_6matrix_Matrix2
 
 
 /* Python wrapper */
-CYTHON_UNUSED static int __pyx_pw_6matrix_8Matrix2D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags); /*proto*/
-CYTHON_UNUSED static int __pyx_pw_6matrix_8Matrix2D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags) {
+CYTHON_UNUSED static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags); /*proto*/
+CYTHON_UNUSED static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getbuffer__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_6__getbuffer__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view), ((int)__pyx_v_flags));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_6__getbuffer__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view), ((int)__pyx_v_flags));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags) {
   int __pyx_v_ndim;
   Py_ssize_t *__pyx_v_shape;
   Py_ssize_t *__pyx_v_strides;
@@ -3152,7 +3152,7 @@ static int __pyx_pf_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("matrix.Matrix2D.__getbuffer__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__getbuffer__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   if (__pyx_v_view->obj != NULL) {
     __Pyx_GOTREF(__pyx_v_view->obj);
@@ -3171,19 +3171,19 @@ static int __pyx_pf_6matrix_8Matrix2D_6__getbuffer__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-CYTHON_UNUSED static void __pyx_pw_6matrix_8Matrix2D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view); /*proto*/
-CYTHON_UNUSED static void __pyx_pw_6matrix_8Matrix2D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view) {
+CYTHON_UNUSED static void __pyx_pw_8cymatrix_6matrix_8Matrix2D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view); /*proto*/
+CYTHON_UNUSED static void __pyx_pw_8cymatrix_6matrix_8Matrix2D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__releasebuffer__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_pf_6matrix_8Matrix2D_8__releasebuffer__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view));
+  __pyx_pf_8cymatrix_6matrix_8Matrix2D_8__releasebuffer__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_6matrix_8Matrix2D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view) {
+static void __pyx_pf_8cymatrix_6matrix_8Matrix2D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, Py_buffer *__pyx_v_view) {
 
   free(__pyx_v_view->shape);
 
@@ -3195,21 +3195,21 @@ static void __pyx_pf_6matrix_8Matrix2D_8__releasebuffer__(CYTHON_UNUSED struct _
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_11__repr__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_11__repr__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_11__repr__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_11__repr__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__repr__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_10__repr__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_10__repr__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_row = 0;
   int __pyx_v_i;
@@ -3254,7 +3254,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_6matrix_
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      __pyx_t_8 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
+      __pyx_t_8 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
       __pyx_t_1 = PyFloat_FromDouble(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 77, __pyx_L1_error)
@@ -3295,7 +3295,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_6matrix_
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("matrix.Matrix2D.__repr__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__repr__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_rows);
@@ -3307,8 +3307,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_10__repr__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3318,7 +3318,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self
   __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_indices), (&PyTuple_Type), 1, "indices", 1))) __PYX_ERR(0, 81, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_12__getitem__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((PyObject*)__pyx_v_indices));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_12__getitem__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((PyObject*)__pyx_v_indices));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3331,7 +3331,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_13__getitem__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -3391,7 +3391,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_6matr
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_8 = __Pyx_PyLong_As_int(__pyx_t_3); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_9 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_t_7, __pyx_t_8, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_9 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_t_7, __pyx_t_8, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 84, __pyx_L1_error)
   __pyx_t_3 = PyFloat_FromDouble(__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_r = __pyx_t_3;
@@ -3404,7 +3404,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_6matr
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3414,8 +3414,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_12__getitem__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value); /*proto*/
-static int __pyx_pw_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value) {
   double __pyx_v_value;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -3430,12 +3430,12 @@ static int __pyx_pw_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_indices), (&PyTuple_Type), 1, "indices", 1))) __PYX_ERR(0, 86, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_14__setitem__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((PyObject*)__pyx_v_indices), ((double)__pyx_v_value));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_14__setitem__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((PyObject*)__pyx_v_indices), ((double)__pyx_v_value));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3448,7 +3448,7 @@ static int __pyx_pw_6matrix_8Matrix2D_15__setitem__(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -3506,7 +3506,7 @@ static int __pyx_pf_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_6matrix_Mat
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_8 = __Pyx_PyLong_As_int(__pyx_t_3); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_v_value, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L1_error)
+  ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_v_value, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L1_error)
 
 
   /* function exit code */
@@ -3516,7 +3516,7 @@ static int __pyx_pf_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_6matrix_Mat
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -3525,8 +3525,8 @@ static int __pyx_pf_6matrix_8Matrix2D_14__setitem__(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3535,8 +3535,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__add__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 91, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_16__add__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_16__add__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3551,15 +3551,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_17__add__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__add___lambda(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__add___lambda(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_7__add___lambda = {"lambda", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_7__add___lambda, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__add___lambda(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__add___lambda = {"lambda", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__add___lambda, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__add___lambda(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3645,7 +3645,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__add__.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__add__.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -3677,7 +3677,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.__add__.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__add__.lambda", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3686,7 +3686,7 @@ static PyObject *__pyx_lambda_funcdef_lambda(CYTHON_UNUSED PyObject *__pyx_self,
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_16__add__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_16__add__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3732,7 +3732,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_16__add__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_7__add___lambda, 0, __pyx_mstate_global->__pyx_n_u_add___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__add___lambda, 0, __pyx_mstate_global->__pyx_n_u_add___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = 0;
   {
@@ -3753,7 +3753,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_16__add__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3763,8 +3763,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_16__add__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3773,8 +3773,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 96, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_18__sub__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_18__sub__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3789,15 +3789,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_19__sub__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__sub___lambda1(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__sub___lambda1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_7__sub___lambda1 = {"lambda1", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_7__sub___lambda1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__sub___lambda1(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__sub___lambda1 = {"lambda1", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__sub___lambda1, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__sub___lambda1(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3883,7 +3883,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__sub__.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__sub__.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -3915,7 +3915,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.__sub__.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__sub__.lambda1", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3924,7 +3924,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3970,7 +3970,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_7__sub___lambda1, 0, __pyx_mstate_global->__pyx_n_u_sub___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__sub___lambda1, 0, __pyx_mstate_global->__pyx_n_u_sub___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = 0;
   {
@@ -3991,7 +3991,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4001,8 +4001,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_18__sub__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -4017,11 +4017,11 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_20__mul__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_20__mul__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -4030,15 +4030,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_21__mul__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__mul___lambda2(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__mul___lambda2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_7__mul___lambda2 = {"lambda2", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_7__mul___lambda2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__mul___lambda2(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__mul___lambda2 = {"lambda2", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__mul___lambda2, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__mul___lambda2(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4124,7 +4124,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__mul__.lambda2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__mul__.lambda2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -4139,8 +4139,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 }
 
 static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j) {
-  struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *__pyx_cur_scope;
-  struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *__pyx_outer_scope;
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *__pyx_cur_scope;
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4149,7 +4149,7 @@ static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self, PyObject *__
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda2", 0);
-  __pyx_outer_scope = (struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyFloat_FromDouble(__pyx_cur_scope->__pyx_v_scalar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
@@ -4165,7 +4165,7 @@ static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self, PyObject *__
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix2D.__mul__.lambda2", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__mul__.lambda2", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4174,8 +4174,8 @@ static PyObject *__pyx_lambda_funcdef_lambda2(PyObject *__pyx_self, PyObject *__
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
-  struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *__pyx_cur_scope;
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4186,9 +4186,9 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_M
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__mul__", 0);
-  __pyx_cur_scope = (struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *)__pyx_tp_new_6matrix___pyx_scope_struct____mul__(__pyx_mstate_global->__pyx_ptype_6matrix___pyx_scope_struct____mul__, __pyx_mstate_global->__pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *)__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct____mul__(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__, __pyx_mstate_global->__pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 101, __pyx_L1_error)
   } else {
@@ -4199,7 +4199,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_7__mul___lambda2, 0, __pyx_mstate_global->__pyx_n_u_mul___locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__mul___lambda2, 0, __pyx_mstate_global->__pyx_n_u_mul___locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = 0;
   {
@@ -4220,7 +4220,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix2D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_DECREF((PyObject *)__pyx_cur_scope);
@@ -4231,8 +4231,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_20__mul__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4241,8 +4241,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self,
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__matmul__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 104, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_22__matmul__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_22__matmul__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4255,8 +4255,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_23__matmul__(PyObject *__pyx_v_self,
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
-  struct __pyx_obj_6matrix_Matrix2D *__pyx_v_result = 0;
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
+  struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_result = 0;
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -4308,8 +4308,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matri
   }
 
   __pyx_t_4 = NULL;
-  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
-  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D); 
+  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
+  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D); 
   __pyx_t_6 = __Pyx_PyLong_From_int(__pyx_v_self->m->rows); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = __Pyx_PyLong_From_int(__pyx_v_other->m->cols); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 108, __pyx_L1_error)
@@ -4325,7 +4325,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matri
     if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF((PyObject *)__pyx_t_2);
   }
-  __pyx_v_result = ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_t_2);
+  __pyx_v_result = ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_t_2);
   __pyx_t_2 = 0;
 
   __pyx_t_8 = __pyx_v_self->m->rows;
@@ -4345,12 +4345,12 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matri
       for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
         __pyx_v_k = __pyx_t_16;
 
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
-        __pyx_t_18 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_k, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
+        __pyx_t_18 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_k, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
         __pyx_v_sum_val = (__pyx_v_sum_val + (__pyx_t_17 * __pyx_t_18));
       }
 
-      ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_sum_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
+      ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_sum_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
     }
   }
 
@@ -4367,7 +4367,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matri
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("matrix.Matrix2D.__matmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__matmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_result);
@@ -4378,21 +4378,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_22__matmul__(struct __pyx_obj_6matri
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_25__str__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_25__str__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_25__str__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_25__str__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__str__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_24__str__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_24__str__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_24__str__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_24__str__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_row = 0;
   int __pyx_v_i;
@@ -4434,7 +4434,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_24__str__(struct __pyx_obj_6matrix_M
     for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
       __pyx_v_j = __pyx_t_7;
 
-      __pyx_t_8 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 126, __pyx_L1_error)
+      __pyx_t_8 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 126, __pyx_L1_error)
       __pyx_t_1 = PyFloat_FromDouble(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_9 = __Pyx_PyObject_Format(__pyx_t_1, __pyx_mstate_global->__pyx_kp_u_2f); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 126, __pyx_L1_error)
@@ -4474,7 +4474,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_24__str__(struct __pyx_obj_6matrix_M
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("matrix.Matrix2D.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_rows);
@@ -4486,21 +4486,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_24__str__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static Py_ssize_t __pyx_pw_6matrix_8Matrix2D_27__len__(PyObject *__pyx_v_self); /*proto*/
-static Py_ssize_t __pyx_pw_6matrix_8Matrix2D_27__len__(PyObject *__pyx_v_self) {
+static Py_ssize_t __pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__(PyObject *__pyx_v_self); /*proto*/
+static Py_ssize_t __pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_26__len__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_26__len__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static Py_ssize_t __pyx_pf_6matrix_8Matrix2D_26__len__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static Py_ssize_t __pyx_pf_8cymatrix_6matrix_8Matrix2D_26__len__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   Py_ssize_t __pyx_r;
 
   __pyx_r = (__pyx_v_self->m->rows * __pyx_v_self->m->cols);
@@ -4514,8 +4514,8 @@ static Py_ssize_t __pyx_pf_6matrix_8Matrix2D_26__len__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_29__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_29__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_29__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_29__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -4530,18 +4530,18 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_29__rmul__(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_28__rmul__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_28__rmul__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4577,7 +4577,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_6matrix_
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix2D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4587,8 +4587,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_28__rmul__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_31__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_31__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_31__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_31__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -4603,18 +4603,18 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_31__truediv__(PyObject *__pyx_v_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_30__truediv__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_30__truediv__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, double __pyx_v_scalar) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -4676,7 +4676,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_6matr
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("matrix.Matrix2D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4686,8 +4686,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_30__truediv__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4696,8 +4696,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__eq__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 141, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_32__eq__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_32__eq__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4710,7 +4710,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_33__eq__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   PyObject *__pyx_r = NULL;
@@ -4759,8 +4759,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_6matrix_Ma
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
       __pyx_v_j = __pyx_t_8;
 
-      __pyx_t_9 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 147, __pyx_L1_error)
-      __pyx_t_10 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 147, __pyx_L1_error)
+      __pyx_t_9 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 147, __pyx_L1_error)
+      __pyx_t_10 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 147, __pyx_L1_error)
       __pyx_t_11 = fabs((__pyx_t_9 - __pyx_t_10)); 
       __pyx_t_1 = (__pyx_t_11 > 1e-10);
       if (__pyx_t_1) {
@@ -4782,7 +4782,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_6matrix_Ma
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__eq__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__eq__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4792,8 +4792,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_32__eq__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4802,8 +4802,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ne__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 151, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_34__ne__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_34__ne__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4816,7 +4816,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_35__ne__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4852,7 +4852,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_6matrix_Ma
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix2D.__ne__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__ne__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4862,8 +4862,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_34__ne__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4872,8 +4872,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__lt__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 154, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_36__lt__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 154, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_36__lt__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4886,7 +4886,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_37__lt__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   PyObject *__pyx_r = NULL;
@@ -4949,8 +4949,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_6matrix_Ma
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 160, __pyx_L1_error)
-      __pyx_t_14 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 160, __pyx_L1_error)
+      __pyx_t_14 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 160, __pyx_L1_error)
       __pyx_t_1 = (__pyx_t_13 >= __pyx_t_14);
       if (__pyx_t_1) {
 
@@ -4974,7 +4974,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4984,8 +4984,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_36__lt__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -4994,8 +4994,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__le__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 164, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_38__le__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_38__le__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -5008,7 +5008,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_39__le__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_38__le__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_38__le__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   PyObject *__pyx_r = NULL;
@@ -5071,8 +5071,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_38__le__(struct __pyx_obj_6matrix_Ma
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L1_error)
-      __pyx_t_14 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L1_error)
+      __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L1_error)
+      __pyx_t_14 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 170, __pyx_L1_error)
       __pyx_t_1 = (__pyx_t_13 > __pyx_t_14);
       if (__pyx_t_1) {
 
@@ -5096,7 +5096,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_38__le__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__le__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__le__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5106,8 +5106,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_38__le__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -5116,8 +5116,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__gt__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 174, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_40__gt__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_40__gt__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -5130,7 +5130,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_41__gt__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   PyObject *__pyx_r = NULL;
@@ -5193,8 +5193,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_6matrix_Ma
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 180, __pyx_L1_error)
-      __pyx_t_14 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 180, __pyx_L1_error)
+      __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 180, __pyx_L1_error)
+      __pyx_t_14 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 180, __pyx_L1_error)
       __pyx_t_1 = (__pyx_t_13 <= __pyx_t_14);
       if (__pyx_t_1) {
 
@@ -5218,7 +5218,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__gt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__gt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5228,8 +5228,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_40__gt__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -5238,8 +5238,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ge__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 184, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_42__ge__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 184, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_42__ge__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -5252,7 +5252,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_43__ge__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   PyObject *__pyx_r = NULL;
@@ -5315,8 +5315,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_6matrix_Ma
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L1_error)
-      __pyx_t_14 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L1_error)
+      __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L1_error)
+      __pyx_t_14 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 190, __pyx_L1_error)
       __pyx_t_1 = (__pyx_t_13 < __pyx_t_14);
       if (__pyx_t_1) {
 
@@ -5340,7 +5340,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix2D.__ge__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__ge__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5350,14 +5350,14 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_42__ge__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_45__abs__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_45__abs__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_45__abs__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_45__abs__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__abs__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_44__abs__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_44__abs__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -5366,15 +5366,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix2D_45__abs__(PyObject *__pyx_v_self) {
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__abs___lambda3(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__abs___lambda3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_7__abs___lambda3 = {"lambda3", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_7__abs___lambda3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_7__abs___lambda3(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__abs___lambda3 = {"lambda3", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__abs___lambda3, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__abs___lambda3(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5460,7 +5460,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__abs__.lambda3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__abs__.lambda3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -5492,7 +5492,7 @@ static PyObject *__pyx_lambda_funcdef_lambda3(CYTHON_UNUSED PyObject *__pyx_self
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.__abs__.lambda3", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__abs__.lambda3", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5501,7 +5501,7 @@ static PyObject *__pyx_lambda_funcdef_lambda3(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5516,7 +5516,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_7__abs___lambda3, 0, __pyx_mstate_global->__pyx_n_u_abs___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_7__abs___lambda3, 0, __pyx_mstate_global->__pyx_n_u_abs___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = 0;
   {
@@ -5537,7 +5537,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix2D.__abs__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__abs__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -5547,16 +5547,16 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_44__abs__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_47apply(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_47apply(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6matrix_8Matrix2D_46apply, "Apply a function element-wise. Function signature: func(self_value, other_value=None, i, j)");
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_47apply = {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_47apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix2D_46apply};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_47apply(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_8cymatrix_6matrix_8Matrix2D_46apply, "Apply a function element-wise. Function signature: func(self_value, other_value=None, i, j)");
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_47apply = {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_47apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix2D_46apply};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_47apply(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5564,7 +5564,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_func = 0;
-  struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other = 0;
+  struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
@@ -5603,7 +5603,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
       if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "apply", 0) < 0) __PYX_ERR(0, 197, __pyx_L3_error)
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix2D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)Py_None));
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
         if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("apply", 0, 1, 2, i); __PYX_ERR(0, 197, __pyx_L3_error) }
       }
@@ -5619,10 +5619,10 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         break;
         default: goto __pyx_L5_argtuple_error;
       }
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix2D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)Py_None));
     }
     __pyx_v_func = values[0];
-    __pyx_v_other = ((struct __pyx_obj_6matrix_Matrix2D *)values[1]);
+    __pyx_v_other = ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
@@ -5633,12 +5633,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 197, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_46apply(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_46apply(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5657,8 +5657,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
-  struct __pyx_obj_6matrix_Matrix2D *__pyx_v_result = 0;
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_46apply(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
+  struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_result = 0;
   int __pyx_v_i;
   int __pyx_v_j;
   double __pyx_v_self_val;
@@ -5688,8 +5688,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
   __Pyx_RefNannySetupContext("apply", 0);
 
   __pyx_t_2 = NULL;
-  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
-  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D); 
+  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
+  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D); 
   __pyx_t_4 = __Pyx_PyLong_From_int(__pyx_v_self->m->rows); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = __Pyx_PyLong_From_int(__pyx_v_self->m->cols); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
@@ -5705,7 +5705,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
     if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
     __Pyx_GOTREF((PyObject *)__pyx_t_1);
   }
-  __pyx_v_result = ((struct __pyx_obj_6matrix_Matrix2D *)__pyx_t_1);
+  __pyx_v_result = ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_t_1);
   __pyx_t_1 = 0;
 
   __pyx_t_7 = __pyx_v_self->m->rows;
@@ -5718,13 +5718,13 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
     for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_11; __pyx_t_12+=1) {
       __pyx_v_j = __pyx_t_12;
 
-      __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
+      __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 205, __pyx_L1_error)
       __pyx_v_self_val = __pyx_t_13;
 
       __pyx_t_14 = (((PyObject *)__pyx_v_other) != Py_None);
       if (__pyx_t_14) {
 
-        __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L1_error)
+        __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 207, __pyx_L1_error)
         __pyx_v_other_val = __pyx_t_13;
 
         __pyx_t_3 = NULL;
@@ -5808,7 +5808,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
       }
       __pyx_L7:;
 
-      ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 211, __pyx_L1_error)
+      ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 211, __pyx_L1_error)
     }
   }
 
@@ -5827,7 +5827,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_15);
   __Pyx_XDECREF(__pyx_t_16);
-  __Pyx_AddTraceback("matrix.Matrix2D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_result);
@@ -5838,16 +5838,16 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_46apply(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_49apply_inplace(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_49apply_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6matrix_8Matrix2D_48apply_inplace, "Apply a function element-wise in place. Function signature: func(self_value, other_value=None, i, j)");
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_49apply_inplace = {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_49apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix2D_48apply_inplace};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_49apply_inplace(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_8cymatrix_6matrix_8Matrix2D_48apply_inplace, "Apply a function element-wise in place. Function signature: func(self_value, other_value=None, i, j)");
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_49apply_inplace = {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_49apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix2D_48apply_inplace};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_49apply_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5855,7 +5855,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_func = 0;
-  struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other = 0;
+  struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
@@ -5894,7 +5894,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
       if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "apply_inplace", 0) < 0) __PYX_ERR(0, 214, __pyx_L3_error)
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix2D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)Py_None));
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
         if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("apply_inplace", 0, 1, 2, i); __PYX_ERR(0, 214, __pyx_L3_error) }
       }
@@ -5910,10 +5910,10 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         break;
         default: goto __pyx_L5_argtuple_error;
       }
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix2D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)Py_None));
     }
     __pyx_v_func = values[0];
-    __pyx_v_other = ((struct __pyx_obj_6matrix_Matrix2D *)values[1]);
+    __pyx_v_other = ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
@@ -5924,12 +5924,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 214, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_48apply_inplace(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, 1, "other", 0))) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_48apply_inplace(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5948,7 +5948,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix2D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   double __pyx_v_self_val;
@@ -5987,13 +5987,13 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6ma
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_j = __pyx_t_6;
 
-      __pyx_t_7 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 221, __pyx_L1_error)
+      __pyx_t_7 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 221, __pyx_L1_error)
       __pyx_v_self_val = __pyx_t_7;
 
       __pyx_t_8 = (((PyObject *)__pyx_v_other) != Py_None);
       if (__pyx_t_8) {
 
-        __pyx_t_7 = ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 223, __pyx_L1_error)
+        __pyx_t_7 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 223, __pyx_L1_error)
         __pyx_v_other_val = __pyx_t_7;
 
         __pyx_t_10 = NULL;
@@ -6077,7 +6077,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6ma
       }
       __pyx_L7:;
 
-      ((struct __pyx_vtabstruct_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 227, __pyx_L1_error)
+      ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 227, __pyx_L1_error)
     }
   }
 
@@ -6093,7 +6093,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6ma
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_15);
-  __Pyx_AddTraceback("matrix.Matrix2D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6103,21 +6103,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_48apply_inplace(struct __pyx_obj_6ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_4rows_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_4rows_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_4rows_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_4rows_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_4rows___get__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_4rows___get__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6137,7 +6137,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_6matr
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6147,21 +6147,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_4rows___get__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_4cols_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix2D_4cols_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_4cols_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_4cols_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_4cols___get__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_4cols___get__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6181,7 +6181,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_6matr
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6190,7 +6190,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_4cols___get__(struct __pyx_obj_6matr
 }
 
 
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix2D__offset(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j) {
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix2D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j) {
   size_t __pyx_r;
 
   __pyx_r = ((size_t)((__pyx_v_i * __pyx_v_self->m->cols) + __pyx_v_j));
@@ -6203,14 +6203,14 @@ static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix2D__offset(struct __pyx_obj_6
 }
 
 
-static PyObject *__pyx_pw_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_skip_dispatch) {
+static double __pyx_f_8cymatrix_6matrix_8Matrix2D_get(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6230,7 +6230,7 @@ static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *_
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -6243,7 +6243,7 @@ static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *_
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_6matrix_8Matrix2D_51get)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_8cymatrix_6matrix_8Matrix2D_51get)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -6292,7 +6292,7 @@ static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *_
     #endif
   }
 
-  __pyx_t_7 = __pyx_f_6matrix_8Matrix2D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 242, __pyx_L1_error)
+  __pyx_t_7 = __pyx_f_8cymatrix_6matrix_8Matrix2D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 242, __pyx_L1_error)
   __pyx_r = (__pyx_v_self->m->data[__pyx_t_7]);
   goto __pyx_L0;
 
@@ -6305,7 +6305,7 @@ static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *_
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -6313,15 +6313,15 @@ static double __pyx_f_6matrix_8Matrix2D_get(struct __pyx_obj_6matrix_Matrix2D *_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_51get = {"get", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_51get, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_51get = {"get", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_51get, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6391,11 +6391,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_50get(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_i, __pyx_v_j);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_50get(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_i, __pyx_v_j);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -6405,7 +6405,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_50get(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_50get(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   double __pyx_t_1;
@@ -6415,7 +6415,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_50get(struct __pyx_obj_6matrix_Matri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6matrix_8Matrix2D_get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_8cymatrix_6matrix_8Matrix2D_get(__pyx_v_self, __pyx_v_i, __pyx_v_j, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 241, __pyx_L1_error)
   __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -6425,7 +6425,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_50get(struct __pyx_obj_6matrix_Matri
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6434,14 +6434,14 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_50get(struct __pyx_obj_6matrix_Matri
 }
 
 
-static PyObject *__pyx_pw_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value, int __pyx_skip_dispatch) {
+static void __pyx_f_8cymatrix_6matrix_8Matrix2D_set(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value, int __pyx_skip_dispatch) {
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
@@ -6460,7 +6460,7 @@ static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__p
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -6473,7 +6473,7 @@ static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__p
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_set); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_6matrix_8Matrix2D_53set)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_8cymatrix_6matrix_8Matrix2D_53set)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -6523,7 +6523,7 @@ static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__p
     #endif
   }
 
-  __pyx_t_8 = __pyx_f_6matrix_8Matrix2D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_8 = __pyx_f_8cymatrix_6matrix_8Matrix2D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 245, __pyx_L1_error)
   (__pyx_v_self->m->data[__pyx_t_8]) = __pyx_v_value;
 
 
@@ -6537,21 +6537,21 @@ static void __pyx_f_6matrix_8Matrix2D_set(struct __pyx_obj_6matrix_Matrix2D *__p
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_53set = {"set", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_53set, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_53set = {"set", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_53set, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6629,11 +6629,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_52set(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_value);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_52set(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_value);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -6643,7 +6643,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_52set(struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_52set(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, double __pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6652,7 +6652,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_52set(struct __pyx_obj_6matrix_Matri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_f_6matrix_8Matrix2D_set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_value, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 244, __pyx_L1_error)
+  __pyx_f_8cymatrix_6matrix_8Matrix2D_set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_value, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 244, __pyx_L1_error)
   __pyx_t_1 = __Pyx_void_to_None(NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
@@ -6662,7 +6662,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_52set(struct __pyx_obj_6matrix_Matri
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6672,15 +6672,15 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_52set(struct __pyx_obj_6matrix_Matri
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_55__reduce_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_55__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_55__reduce_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6706,14 +6706,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   const Py_ssize_t __pyx_kwds_len = unlikely(__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
   if (unlikely(__pyx_kwds_len < 0)) return NULL;
   if (unlikely(__pyx_kwds_len > 0)) {__Pyx_RejectKeywords("__reduce_cython__", __pyx_kwds); return NULL;}
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_54__reduce_cython__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_54__reduce_cython__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -6727,7 +6727,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED st
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -6736,15 +6736,15 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_54__reduce_cython__(CYTHON_UNUSED st
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix2D_57__setstate_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix2D_57__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix2D_57__setstate_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6806,11 +6806,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix2D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix2D_56__setstate_cython__(((struct __pyx_obj_6matrix_Matrix2D *)__pyx_v_self), __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix2D_56__setstate_cython__(((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)__pyx_v_self), __pyx_v___pyx_state);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -6820,7 +6820,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix2D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix2D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -6834,7 +6834,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED 
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix2D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix2D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -6843,8 +6843,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix2D_56__setstate_cython__(CYTHON_UNUSED 
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix3D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_6matrix_8Matrix3D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
@@ -6860,14 +6860,14 @@ static int __pyx_pw_6matrix_8Matrix3D_1__cinit__(PyObject *__pyx_v_self, PyObjec
   const Py_ssize_t __pyx_kwds_len = unlikely(__pyx_kwds) ? __Pyx_NumKwargs_VARARGS(__pyx_kwds) : 0;
   if (unlikely(__pyx_kwds_len < 0)) return -1;
   if (unlikely(__pyx_kwds_len > 0)) {__Pyx_RejectKeywords("__cinit__", __pyx_kwds); return -1;}
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D___cinit__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D___cinit__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix3D___cinit__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D___cinit__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   int __pyx_r;
 
   __pyx_v_self->m = NULL;
@@ -6882,19 +6882,19 @@ static int __pyx_pf_6matrix_8Matrix3D___cinit__(struct __pyx_obj_6matrix_Matrix3
 
 
 /* Python wrapper */
-static void __pyx_pw_6matrix_8Matrix3D_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_6matrix_8Matrix3D_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_8cymatrix_6matrix_8Matrix3D_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_8cymatrix_6matrix_8Matrix3D_3__dealloc__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_pf_6matrix_8Matrix3D_2__dealloc__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_pf_8cymatrix_6matrix_8Matrix3D_2__dealloc__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_6matrix_8Matrix3D_2__dealloc__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static void __pyx_pf_8cymatrix_6matrix_8Matrix3D_2__dealloc__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   int __pyx_t_1;
   int __pyx_t_2;
 
@@ -6918,8 +6918,8 @@ static void __pyx_pf_6matrix_8Matrix3D_2__dealloc__(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_v_rows;
   int __pyx_v_cols;
   int __pyx_v_planes;
@@ -6987,11 +6987,11 @@ static int __pyx_pw_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_4__init__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_rows, __pyx_v_cols, __pyx_v_planes);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_4__init__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_rows, __pyx_v_cols, __pyx_v_planes);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -7001,14 +7001,14 @@ static int __pyx_pw_6matrix_8Matrix3D_5__init__(PyObject *__pyx_v_self, PyObject
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix3D_4__init__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols, int __pyx_v_planes) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_4__init__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_rows, int __pyx_v_cols, int __pyx_v_planes) {
   int __pyx_r;
   int __pyx_t_1;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
 
-  __pyx_v_self->m = ((__pyx_t_6matrix_matrix_3d *)malloc((sizeof(__pyx_t_6matrix_matrix_3d))));
+  __pyx_v_self->m = ((__pyx_t_8cymatrix_6matrix_matrix_3d *)malloc((sizeof(__pyx_t_8cymatrix_6matrix_matrix_3d))));
 
   __pyx_t_1 = (__pyx_v_self->m == NULL);
   if (unlikely(__pyx_t_1)) {
@@ -7032,7 +7032,7 @@ static int __pyx_pf_6matrix_8Matrix3D_4__init__(struct __pyx_obj_6matrix_Matrix3
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   return __pyx_r;
@@ -7040,21 +7040,21 @@ static int __pyx_pf_6matrix_8Matrix3D_4__init__(struct __pyx_obj_6matrix_Matrix3
 
 
 /* Python wrapper */
-CYTHON_UNUSED static int __pyx_pw_6matrix_8Matrix3D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags); /*proto*/
-CYTHON_UNUSED static int __pyx_pw_6matrix_8Matrix3D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags) {
+CYTHON_UNUSED static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags); /*proto*/
+CYTHON_UNUSED static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_7__getbuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view, int __pyx_v_flags) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getbuffer__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_6__getbuffer__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view), ((int)__pyx_v_flags));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_6__getbuffer__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view), ((int)__pyx_v_flags));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view, CYTHON_UNUSED int __pyx_v_flags) {
   int __pyx_v_ndim;
   Py_ssize_t *__pyx_v_shape;
   Py_ssize_t *__pyx_v_strides;
@@ -7149,7 +7149,7 @@ static int __pyx_pf_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("matrix.Matrix3D.__getbuffer__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__getbuffer__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   if (__pyx_v_view->obj != NULL) {
     __Pyx_GOTREF(__pyx_v_view->obj);
@@ -7168,19 +7168,19 @@ static int __pyx_pf_6matrix_8Matrix3D_6__getbuffer__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-CYTHON_UNUSED static void __pyx_pw_6matrix_8Matrix3D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view); /*proto*/
-CYTHON_UNUSED static void __pyx_pw_6matrix_8Matrix3D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view) {
+CYTHON_UNUSED static void __pyx_pw_8cymatrix_6matrix_8Matrix3D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view); /*proto*/
+CYTHON_UNUSED static void __pyx_pw_8cymatrix_6matrix_8Matrix3D_9__releasebuffer__(PyObject *__pyx_v_self, Py_buffer *__pyx_v_view) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__releasebuffer__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_pf_6matrix_8Matrix3D_8__releasebuffer__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view));
+  __pyx_pf_8cymatrix_6matrix_8Matrix3D_8__releasebuffer__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((Py_buffer *)__pyx_v_view));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_6matrix_8Matrix3D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view) {
+static void __pyx_pf_8cymatrix_6matrix_8Matrix3D_8__releasebuffer__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, Py_buffer *__pyx_v_view) {
 
   free(__pyx_v_view->shape);
 
@@ -7192,21 +7192,21 @@ static void __pyx_pf_6matrix_8Matrix3D_8__releasebuffer__(CYTHON_UNUSED struct _
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_11__repr__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_11__repr__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_11__repr__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_11__repr__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__repr__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_10__repr__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_10__repr__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_v_planes = 0;
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_row = 0;
@@ -7267,7 +7267,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_6matrix_
       for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
         __pyx_v_k = __pyx_t_10;
 
-        __pyx_t_11 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 318, __pyx_L1_error)
+        __pyx_t_11 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 318, __pyx_L1_error)
         __pyx_t_1 = PyFloat_FromDouble(__pyx_t_11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 318, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 318, __pyx_L1_error)
@@ -7317,7 +7317,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_6matrix_
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_15);
   __Pyx_XDECREF(__pyx_t_17);
-  __Pyx_AddTraceback("matrix.Matrix3D.__repr__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__repr__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_planes);
@@ -7330,8 +7330,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_10__repr__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -7341,7 +7341,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self
   __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_indices), (&PyTuple_Type), 1, "indices", 1))) __PYX_ERR(0, 323, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_12__getitem__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((PyObject*)__pyx_v_indices));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_12__getitem__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((PyObject*)__pyx_v_indices));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7354,7 +7354,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_13__getitem__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -7423,7 +7423,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_6matr
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_9 = __Pyx_PyLong_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_10 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_t_9, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 326, __pyx_L1_error)
+  __pyx_t_10 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_t_9, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 326, __pyx_L1_error)
   __pyx_t_3 = PyFloat_FromDouble(__pyx_t_10); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 326, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_r = __pyx_t_3;
@@ -7436,7 +7436,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_6matr
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__getitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7446,8 +7446,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_12__getitem__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static int __pyx_pw_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value); /*proto*/
-static int __pyx_pw_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value) {
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value); /*proto*/
+static int __pyx_pw_8cymatrix_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_indices, PyObject *__pyx_arg_value) {
   double __pyx_v_value;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -7462,12 +7462,12 @@ static int __pyx_pw_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_indices), (&PyTuple_Type), 1, "indices", 1))) __PYX_ERR(0, 328, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_14__setitem__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((PyObject*)__pyx_v_indices), ((double)__pyx_v_value));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_14__setitem__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((PyObject*)__pyx_v_indices), ((double)__pyx_v_value));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7480,7 +7480,7 @@ static int __pyx_pw_6matrix_8Matrix3D_15__setitem__(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static int __pyx_pf_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value) {
+static int __pyx_pf_8cymatrix_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_indices, double __pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -7547,7 +7547,7 @@ static int __pyx_pf_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_6matrix_Mat
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_9 = __Pyx_PyLong_As_int(__pyx_t_3); if (unlikely((__pyx_t_9 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_t_9, __pyx_v_value, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 331, __pyx_L1_error)
+  ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_t_7, __pyx_t_8, __pyx_t_9, __pyx_v_value, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 331, __pyx_L1_error)
 
 
   /* function exit code */
@@ -7557,7 +7557,7 @@ static int __pyx_pf_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_6matrix_Mat
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -7566,8 +7566,8 @@ static int __pyx_pf_6matrix_8Matrix3D_14__setitem__(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -7576,8 +7576,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__add__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 333, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_16__add__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 333, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_16__add__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7592,15 +7592,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_17__add__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__add___lambda4(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__add___lambda4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_7__add___lambda4 = {"lambda4", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_7__add___lambda4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__add___lambda4(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__add___lambda4 = {"lambda4", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__add___lambda4, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__add___lambda4(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -7694,7 +7694,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__add__.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__add__.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -7726,7 +7726,7 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.__add__.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__add__.lambda4", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7735,7 +7735,7 @@ static PyObject *__pyx_lambda_funcdef_lambda4(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_16__add__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_16__add__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -7790,7 +7790,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_16__add__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_7__add___lambda4, 0, __pyx_mstate_global->__pyx_n_u_add___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[4])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 338, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__add___lambda4, 0, __pyx_mstate_global->__pyx_n_u_add___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[4])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 338, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = 0;
   {
@@ -7811,7 +7811,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_16__add__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7821,8 +7821,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_16__add__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -7831,8 +7831,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 340, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_18__sub__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 340, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_18__sub__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7847,15 +7847,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_19__sub__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__sub___lambda5(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__sub___lambda5(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_7__sub___lambda5 = {"lambda5", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_7__sub___lambda5, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__sub___lambda5(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__sub___lambda5 = {"lambda5", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__sub___lambda5, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__sub___lambda5(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -7949,7 +7949,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__sub__.lambda5", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__sub__.lambda5", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -7981,7 +7981,7 @@ static PyObject *__pyx_lambda_funcdef_lambda5(CYTHON_UNUSED PyObject *__pyx_self
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.__sub__.lambda5", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__sub__.lambda5", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7990,7 +7990,7 @@ static PyObject *__pyx_lambda_funcdef_lambda5(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -8045,7 +8045,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_5 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_7__sub___lambda5, 0, __pyx_mstate_global->__pyx_n_u_sub___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[5])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 345, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__sub___lambda5, 0, __pyx_mstate_global->__pyx_n_u_sub___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[5])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 345, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = 0;
   {
@@ -8066,7 +8066,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8076,8 +8076,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_18__sub__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -8092,11 +8092,11 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_20__mul__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_20__mul__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -8105,15 +8105,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_21__mul__(PyObject *__pyx_v_self, Py
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__mul___lambda6(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__mul___lambda6(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_7__mul___lambda6 = {"lambda6", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_7__mul___lambda6, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__mul___lambda6(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__mul___lambda6 = {"lambda6", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__mul___lambda6, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__mul___lambda6(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -8207,7 +8207,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__mul__.lambda6", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__mul__.lambda6", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -8222,8 +8222,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 }
 
 static PyObject *__pyx_lambda_funcdef_lambda6(PyObject *__pyx_self, PyObject *__pyx_v_self_val, CYTHON_UNUSED PyObject *__pyx_v_other_val, CYTHON_UNUSED PyObject *__pyx_v_i, CYTHON_UNUSED PyObject *__pyx_v_j, CYTHON_UNUSED PyObject *__pyx_v_k) {
-  struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *__pyx_cur_scope;
-  struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *__pyx_outer_scope;
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *__pyx_cur_scope;
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *__pyx_outer_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8232,7 +8232,7 @@ static PyObject *__pyx_lambda_funcdef_lambda6(PyObject *__pyx_self, PyObject *__
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda6", 0);
-  __pyx_outer_scope = (struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *) __Pyx_CyFunction_GetClosure(__pyx_self);
+  __pyx_outer_scope = (struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *) __Pyx_CyFunction_GetClosure(__pyx_self);
   __pyx_cur_scope = __pyx_outer_scope;
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = PyFloat_FromDouble(__pyx_cur_scope->__pyx_v_scalar); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 348, __pyx_L1_error)
@@ -8248,7 +8248,7 @@ static PyObject *__pyx_lambda_funcdef_lambda6(PyObject *__pyx_self, PyObject *__
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix3D.__mul__.lambda6", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__mul__.lambda6", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8257,8 +8257,8 @@ static PyObject *__pyx_lambda_funcdef_lambda6(PyObject *__pyx_self, PyObject *__
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
-  struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *__pyx_cur_scope;
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
+  struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8269,9 +8269,9 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_M
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__mul__", 0);
-  __pyx_cur_scope = (struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *)__pyx_tp_new_6matrix___pyx_scope_struct_1___mul__(__pyx_mstate_global->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__, __pyx_mstate_global->__pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *)__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct_1___mul__(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__, __pyx_mstate_global->__pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 347, __pyx_L1_error)
   } else {
@@ -8282,7 +8282,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_7__mul___lambda6, 0, __pyx_mstate_global->__pyx_n_u_mul___locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 348, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__mul___lambda6, 0, __pyx_mstate_global->__pyx_n_u_mul___locals_lambda, ((PyObject*)__pyx_cur_scope), __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 348, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = 0;
   {
@@ -8303,7 +8303,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix3D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_DECREF((PyObject *)__pyx_cur_scope);
@@ -8314,21 +8314,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_20__mul__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_23__str__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_23__str__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_23__str__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_23__str__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__str__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_22__str__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_22__str__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_22__str__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_22__str__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_v_planes = 0;
   PyObject *__pyx_v_rows = 0;
   PyObject *__pyx_v_row = 0;
@@ -8385,7 +8385,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_22__str__(struct __pyx_obj_6matrix_M
       for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
         __pyx_v_k = __pyx_t_10;
 
-        __pyx_t_11 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 360, __pyx_L1_error)
+        __pyx_t_11 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 360, __pyx_L1_error)
         __pyx_t_1 = PyFloat_FromDouble(__pyx_t_11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 360, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_t_12 = __Pyx_PyObject_Format(__pyx_t_1, __pyx_mstate_global->__pyx_kp_u_2f); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 360, __pyx_L1_error)
@@ -8437,7 +8437,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_22__str__(struct __pyx_obj_6matrix_M
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("matrix.Matrix3D.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_planes);
@@ -8450,21 +8450,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_22__str__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static Py_ssize_t __pyx_pw_6matrix_8Matrix3D_25__len__(PyObject *__pyx_v_self); /*proto*/
-static Py_ssize_t __pyx_pw_6matrix_8Matrix3D_25__len__(PyObject *__pyx_v_self) {
+static Py_ssize_t __pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__(PyObject *__pyx_v_self); /*proto*/
+static Py_ssize_t __pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_24__len__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_24__len__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static Py_ssize_t __pyx_pf_6matrix_8Matrix3D_24__len__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static Py_ssize_t __pyx_pf_8cymatrix_6matrix_8Matrix3D_24__len__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   Py_ssize_t __pyx_r;
 
   __pyx_r = ((__pyx_v_self->m->rows * __pyx_v_self->m->cols) * __pyx_v_self->m->planes);
@@ -8478,8 +8478,8 @@ static Py_ssize_t __pyx_pf_6matrix_8Matrix3D_24__len__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_27__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_27__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_27__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_27__rmul__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -8494,18 +8494,18 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_27__rmul__(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_26__rmul__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_26__rmul__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8541,7 +8541,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_6matrix_
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix3D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__rmul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8551,8 +8551,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_26__rmul__(struct __pyx_obj_6matrix_
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_29__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_29__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_29__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_29__truediv__(PyObject *__pyx_v_self, PyObject *__pyx_arg_scalar) {
   double __pyx_v_scalar;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
@@ -8567,18 +8567,18 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_29__truediv__(PyObject *__pyx_v_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_28__truediv__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_28__truediv__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((double)__pyx_v_scalar));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, double __pyx_v_scalar) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -8640,7 +8640,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_6matr
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("matrix.Matrix3D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8650,8 +8650,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_28__truediv__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8660,8 +8660,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__eq__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 376, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_30__eq__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 376, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_30__eq__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -8674,7 +8674,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_31__eq__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -8741,8 +8741,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_6matrix_Ma
       for (__pyx_t_11 = 0; __pyx_t_11 < __pyx_t_10; __pyx_t_11+=1) {
         __pyx_v_k = __pyx_t_11;
 
-        __pyx_t_12 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 385, __pyx_L1_error)
-        __pyx_t_13 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 385, __pyx_L1_error)
+        __pyx_t_12 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 385, __pyx_L1_error)
+        __pyx_t_13 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 385, __pyx_L1_error)
         __pyx_t_14 = fabs((__pyx_t_12 - __pyx_t_13)); 
         __pyx_t_1 = (__pyx_t_14 > 1e-10);
         if (__pyx_t_1) {
@@ -8765,7 +8765,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_6matrix_Ma
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__eq__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__eq__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8775,8 +8775,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_30__eq__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8785,8 +8785,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ne__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 389, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_32__ne__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 389, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_32__ne__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -8799,7 +8799,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_33__ne__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8835,7 +8835,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_6matrix_Ma
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix3D.__ne__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__ne__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8845,8 +8845,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_32__ne__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8855,8 +8855,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__lt__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 392, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_34__lt__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 392, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_34__lt__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -8869,7 +8869,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_35__lt__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -8950,8 +8950,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_6matrix_Ma
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_k = __pyx_t_15;
 
-        __pyx_t_16 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 401, __pyx_L1_error)
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 401, __pyx_L1_error)
+        __pyx_t_16 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 401, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 401, __pyx_L1_error)
         __pyx_t_1 = (__pyx_t_16 >= __pyx_t_17);
         if (__pyx_t_1) {
 
@@ -8976,7 +8976,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8986,8 +8986,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_34__lt__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8996,8 +8996,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__le__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 405, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_36__le__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 405, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_36__le__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9010,7 +9010,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_37__le__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_36__le__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_36__le__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -9091,8 +9091,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_36__le__(struct __pyx_obj_6matrix_Ma
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_k = __pyx_t_15;
 
-        __pyx_t_16 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 414, __pyx_L1_error)
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 414, __pyx_L1_error)
+        __pyx_t_16 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 414, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 414, __pyx_L1_error)
         __pyx_t_1 = (__pyx_t_16 > __pyx_t_17);
         if (__pyx_t_1) {
 
@@ -9117,7 +9117,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_36__le__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__le__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__le__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9127,8 +9127,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_36__le__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -9137,8 +9137,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__gt__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 418, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_38__gt__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 418, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_38__gt__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9151,7 +9151,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_39__gt__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -9232,8 +9232,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_6matrix_Ma
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_k = __pyx_t_15;
 
-        __pyx_t_16 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 427, __pyx_L1_error)
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 427, __pyx_L1_error)
+        __pyx_t_16 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 427, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 427, __pyx_L1_error)
         __pyx_t_1 = (__pyx_t_16 <= __pyx_t_17);
         if (__pyx_t_1) {
 
@@ -9258,7 +9258,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__gt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__gt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9268,8 +9268,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_38__gt__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyObject *__pyx_v_other) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -9278,8 +9278,8 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__ge__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 431, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_40__ge__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_other));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 431, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_40__ge__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_other));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9292,7 +9292,7 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_41__ge__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -9373,8 +9373,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_6matrix_Ma
       for (__pyx_t_15 = 0; __pyx_t_15 < __pyx_t_14; __pyx_t_15+=1) {
         __pyx_v_k = __pyx_t_15;
 
-        __pyx_t_16 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 440, __pyx_L1_error)
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 440, __pyx_L1_error)
+        __pyx_t_16 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 440, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 440, __pyx_L1_error)
         __pyx_t_1 = (__pyx_t_16 < __pyx_t_17);
         if (__pyx_t_1) {
 
@@ -9399,7 +9399,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_6matrix_Ma
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("matrix.Matrix3D.__ge__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__ge__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9409,14 +9409,14 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_40__ge__(struct __pyx_obj_6matrix_Ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_43__abs__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_43__abs__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_43__abs__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_43__abs__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__abs__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_42__abs__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_42__abs__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
@@ -9425,15 +9425,15 @@ static PyObject *__pyx_pw_6matrix_8Matrix3D_43__abs__(PyObject *__pyx_v_self) {
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__abs___lambda7(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__abs___lambda7(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_7__abs___lambda7 = {"lambda7", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_7__abs___lambda7, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_7__abs___lambda7(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__abs___lambda7 = {"lambda7", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__abs___lambda7, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__abs___lambda7(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -9527,7 +9527,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__abs__.lambda7", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__abs__.lambda7", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
@@ -9559,7 +9559,7 @@ static PyObject *__pyx_lambda_funcdef_lambda7(CYTHON_UNUSED PyObject *__pyx_self
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.__abs__.lambda7", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__abs__.lambda7", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9568,7 +9568,7 @@ static PyObject *__pyx_lambda_funcdef_lambda7(CYTHON_UNUSED PyObject *__pyx_self
 }
 
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9583,7 +9583,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2 = ((PyObject *)__pyx_v_self);
   __Pyx_INCREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_7__abs___lambda7, 0, __pyx_mstate_global->__pyx_n_u_abs___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[7])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 445, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_7__abs___lambda7, 0, __pyx_mstate_global->__pyx_n_u_abs___locals_lambda, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[7])); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 445, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = 0;
   {
@@ -9604,7 +9604,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_6matrix_M
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("matrix.Matrix3D.__abs__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__abs__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9614,16 +9614,16 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_42__abs__(struct __pyx_obj_6matrix_M
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_45apply(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_45apply(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6matrix_8Matrix3D_44apply, "Apply a function element-wise. Function signature: func(self_value, other_value=None, i, j, k)");
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_45apply = {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_45apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix3D_44apply};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_45apply(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_8cymatrix_6matrix_8Matrix3D_44apply, "Apply a function element-wise. Function signature: func(self_value, other_value=None, i, j, k)");
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_45apply = {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_45apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix3D_44apply};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_45apply(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -9631,7 +9631,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_func = 0;
-  struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other = 0;
+  struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
@@ -9670,7 +9670,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
       if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "apply", 0) < 0) __PYX_ERR(0, 447, __pyx_L3_error)
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix3D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)Py_None));
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
         if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("apply", 0, 1, 2, i); __PYX_ERR(0, 447, __pyx_L3_error) }
       }
@@ -9686,10 +9686,10 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         break;
         default: goto __pyx_L5_argtuple_error;
       }
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix3D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)Py_None));
     }
     __pyx_v_func = values[0];
-    __pyx_v_other = ((struct __pyx_obj_6matrix_Matrix3D *)values[1]);
+    __pyx_v_other = ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
@@ -9700,12 +9700,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 447, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_44apply(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 447, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_44apply(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9724,8 +9724,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
-  struct __pyx_obj_6matrix_Matrix3D *__pyx_v_result = 0;
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_44apply(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
+  struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_result = 0;
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -9760,8 +9760,8 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
   __Pyx_RefNannySetupContext("apply", 0);
 
   __pyx_t_2 = NULL;
-  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
-  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D); 
+  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
+  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D); 
   __pyx_t_4 = __Pyx_PyLong_From_int(__pyx_v_self->m->rows); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 449, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = __Pyx_PyLong_From_int(__pyx_v_self->m->cols); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 449, __pyx_L1_error)
@@ -9780,7 +9780,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
     if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 449, __pyx_L1_error)
     __Pyx_GOTREF((PyObject *)__pyx_t_1);
   }
-  __pyx_v_result = ((struct __pyx_obj_6matrix_Matrix3D *)__pyx_t_1);
+  __pyx_v_result = ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_t_1);
   __pyx_t_1 = 0;
 
   __pyx_t_8 = __pyx_v_self->m->rows;
@@ -9798,13 +9798,13 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
       for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
         __pyx_v_k = __pyx_t_16;
 
-        __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 456, __pyx_L1_error)
+        __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 456, __pyx_L1_error)
         __pyx_v_self_val = __pyx_t_17;
 
         __pyx_t_18 = (((PyObject *)__pyx_v_other) != Py_None);
         if (__pyx_t_18) {
 
-          __pyx_t_17 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 458, __pyx_L1_error)
+          __pyx_t_17 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 458, __pyx_L1_error)
           __pyx_v_other_val = __pyx_t_17;
 
           __pyx_t_3 = NULL;
@@ -9894,7 +9894,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
         }
         __pyx_L9:;
 
-        ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 462, __pyx_L1_error)
+        ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_result->__pyx_vtab)->set(__pyx_v_result, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 462, __pyx_L1_error)
       }
     }
   }
@@ -9915,7 +9915,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_19);
   __Pyx_XDECREF(__pyx_t_20);
-  __Pyx_AddTraceback("matrix.Matrix3D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.apply", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_result);
@@ -9926,16 +9926,16 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_44apply(struct __pyx_obj_6matrix_Mat
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_47apply_inplace(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_47apply_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_6matrix_8Matrix3D_46apply_inplace, "Apply a function element-wise in place. Function signature: func(self_value, other_value=None, i, j, k)");
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_47apply_inplace = {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_47apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix3D_46apply_inplace};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_47apply_inplace(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_8cymatrix_6matrix_8Matrix3D_46apply_inplace, "Apply a function element-wise in place. Function signature: func(self_value, other_value=None, i, j, k)");
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_47apply_inplace = {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_47apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix3D_46apply_inplace};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_47apply_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -9943,7 +9943,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ) {
   PyObject *__pyx_v_func = 0;
-  struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other = 0;
+  struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other = 0;
   #if !CYTHON_METH_FASTCALL
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   #endif
@@ -9982,7 +9982,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
       const Py_ssize_t kwd_pos_args = __pyx_nargs;
       if (__Pyx_ParseKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values, kwd_pos_args, __pyx_kwds_len, "apply_inplace", 0) < 0) __PYX_ERR(0, 465, __pyx_L3_error)
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix3D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)Py_None));
       for (Py_ssize_t i = __pyx_nargs; i < 1; i++) {
         if (unlikely(!values[i])) { __Pyx_RaiseArgtupleInvalid("apply_inplace", 0, 1, 2, i); __PYX_ERR(0, 465, __pyx_L3_error) }
       }
@@ -9998,10 +9998,10 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         break;
         default: goto __pyx_L5_argtuple_error;
       }
-      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_6matrix_Matrix3D *)Py_None));
+      if (!values[1]) values[1] = __Pyx_NewRef((PyObject *)((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)Py_None));
     }
     __pyx_v_func = values[0];
-    __pyx_v_other = ((struct __pyx_obj_6matrix_Matrix3D *)values[1]);
+    __pyx_v_other = ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)values[1]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
@@ -10012,12 +10012,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 465, __pyx_L1_error)
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_46apply_inplace(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_other), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, 1, "other", 0))) __PYX_ERR(0, 465, __pyx_L1_error)
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_46apply_inplace(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_func, __pyx_v_other);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10036,7 +10036,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_6matrix_Matrix3D *__pyx_v_other) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, PyObject *__pyx_v_func, struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_other) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -10085,13 +10085,13 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6ma
       for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
         __pyx_v_k = __pyx_t_9;
 
-        __pyx_t_10 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 473, __pyx_L1_error)
+        __pyx_t_10 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 473, __pyx_L1_error)
         __pyx_v_self_val = __pyx_t_10;
 
         __pyx_t_11 = (((PyObject *)__pyx_v_other) != Py_None);
         if (__pyx_t_11) {
 
-          __pyx_t_10 = ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 475, __pyx_L1_error)
+          __pyx_t_10 = ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_other->__pyx_vtab)->get(__pyx_v_other, __pyx_v_i, __pyx_v_j, __pyx_v_k, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 475, __pyx_L1_error)
           __pyx_v_other_val = __pyx_t_10;
 
           __pyx_t_13 = NULL;
@@ -10181,7 +10181,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6ma
         }
         __pyx_L9:;
 
-        ((struct __pyx_vtabstruct_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 479, __pyx_L1_error)
+        ((struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D *)__pyx_v_self->__pyx_vtab)->set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_result_val, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 479, __pyx_L1_error)
       }
     }
   }
@@ -10199,7 +10199,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6ma
   __Pyx_XDECREF(__pyx_t_17);
   __Pyx_XDECREF(__pyx_t_18);
   __Pyx_XDECREF(__pyx_t_19);
-  __Pyx_AddTraceback("matrix.Matrix3D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.apply_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10209,21 +10209,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_46apply_inplace(struct __pyx_obj_6ma
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_4rows_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_4rows_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_4rows_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_4rows_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_4rows___get__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_4rows___get__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10243,7 +10243,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_6matr
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.rows.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10253,21 +10253,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_4rows___get__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_4cols_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_4cols_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_4cols_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_4cols_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_4cols___get__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_4cols___get__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10287,7 +10287,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_6matr
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.cols.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10297,21 +10297,21 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_4cols___get__(struct __pyx_obj_6matr
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_6planes_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_6matrix_8Matrix3D_6planes_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_6planes_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_6planes_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_6planes___get__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_6planes___get__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10331,7 +10331,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_6ma
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.planes.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.planes.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10340,7 +10340,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_6planes___get__(struct __pyx_obj_6ma
 }
 
 
-static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix3D__offset(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k) {
+static CYTHON_INLINE size_t __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k) {
   size_t __pyx_r;
 
   __pyx_r = ((size_t)(__pyx_v_k + (__pyx_v_self->m->planes * (__pyx_v_j + (__pyx_v_self->m->cols * __pyx_v_i)))));
@@ -10354,15 +10354,15 @@ static CYTHON_INLINE size_t __pyx_f_6matrix_8Matrix3D__offset(struct __pyx_obj_6
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_49offset(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_49offset(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_49offset = {"offset", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_49offset, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_49offset(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_49offset = {"offset", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_49offset, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_49offset(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -10440,11 +10440,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.offset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.offset", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_48offset(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_row, __pyx_v_col, __pyx_v_plane);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_48offset(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_row, __pyx_v_col, __pyx_v_plane);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -10454,7 +10454,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_48offset(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_row, int __pyx_v_col, int __pyx_v_plane) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_48offset(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_row, int __pyx_v_col, int __pyx_v_plane) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   size_t __pyx_t_1;
@@ -10465,7 +10465,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_48offset(struct __pyx_obj_6matrix_Ma
   __Pyx_RefNannySetupContext("offset", 0);
 
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_row, __pyx_v_col, __pyx_v_plane); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 498, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_row, __pyx_v_col, __pyx_v_plane); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 498, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyLong_FromSize_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 498, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -10476,7 +10476,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_48offset(struct __pyx_obj_6matrix_Ma
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix3D.offset", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.offset", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10485,14 +10485,14 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_48offset(struct __pyx_obj_6matrix_Ma
 }
 
 
-static PyObject *__pyx_pw_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, int __pyx_skip_dispatch) {
+static double __pyx_f_8cymatrix_6matrix_8Matrix3D_get(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10513,7 +10513,7 @@ static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *_
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -10526,7 +10526,7 @@ static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *_
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_get); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 500, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_6matrix_8Matrix3D_51get)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_8cymatrix_6matrix_8Matrix3D_51get)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -10578,7 +10578,7 @@ static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *_
     #endif
   }
 
-  __pyx_t_8 = __pyx_f_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_8 = __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 501, __pyx_L1_error)
   __pyx_r = (__pyx_v_self->m->data[__pyx_t_8]);
   goto __pyx_L0;
 
@@ -10592,7 +10592,7 @@ static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *_
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -10600,15 +10600,15 @@ static double __pyx_f_6matrix_8Matrix3D_get(struct __pyx_obj_6matrix_Matrix3D *_
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_51get = {"get", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_51get, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_51get = {"get", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_51get, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_51get(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -10686,11 +10686,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_50get(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_k);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_50get(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_k);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -10700,7 +10700,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_50get(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_50get(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   double __pyx_t_1;
@@ -10710,7 +10710,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_50get(struct __pyx_obj_6matrix_Matri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6matrix_8Matrix3D_get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 500, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_8cymatrix_6matrix_8Matrix3D_get(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 500, __pyx_L1_error)
   __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -10720,7 +10720,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_50get(struct __pyx_obj_6matrix_Matri
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10729,14 +10729,14 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_50get(struct __pyx_obj_6matrix_Matri
 }
 
 
-static PyObject *__pyx_pw_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value, int __pyx_skip_dispatch) {
+static void __pyx_f_8cymatrix_6matrix_8Matrix3D_set(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value, int __pyx_skip_dispatch) {
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   PyObject *__pyx_t_2 = NULL;
@@ -10756,7 +10756,7 @@ static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__p
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -10769,7 +10769,7 @@ static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__p
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_set); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 503, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_6matrix_8Matrix3D_53set)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_8cymatrix_6matrix_8Matrix3D_53set)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -10822,7 +10822,7 @@ static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__p
     #endif
   }
 
-  __pyx_t_9 = __pyx_f_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 504, __pyx_L1_error)
+  __pyx_t_9 = __pyx_f_8cymatrix_6matrix_8Matrix3D__offset(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 504, __pyx_L1_error)
   (__pyx_v_self->m->data[__pyx_t_9]) = __pyx_v_value;
 
 
@@ -10837,21 +10837,21 @@ static void __pyx_f_6matrix_8Matrix3D_set(struct __pyx_obj_6matrix_Matrix3D *__p
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_53set = {"set", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_53set, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_53set = {"set", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_53set, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_53set(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -10937,11 +10937,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_52set(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_value);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_52set(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_value);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -10951,7 +10951,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_52set(struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_52set(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, int __pyx_v_i, int __pyx_v_j, int __pyx_v_k, double __pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10960,7 +10960,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_52set(struct __pyx_obj_6matrix_Matri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_f_6matrix_8Matrix3D_set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_value, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 503, __pyx_L1_error)
+  __pyx_f_8cymatrix_6matrix_8Matrix3D_set(__pyx_v_self, __pyx_v_i, __pyx_v_j, __pyx_v_k, __pyx_v_value, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 503, __pyx_L1_error)
   __pyx_t_1 = __Pyx_void_to_None(NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 503, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
@@ -10970,7 +10970,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_52set(struct __pyx_obj_6matrix_Matri
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.set", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10980,15 +10980,15 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_52set(struct __pyx_obj_6matrix_Matri
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_55__reduce_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_55__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_55__reduce_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -11014,14 +11014,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   const Py_ssize_t __pyx_kwds_len = unlikely(__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
   if (unlikely(__pyx_kwds_len < 0)) return NULL;
   if (unlikely(__pyx_kwds_len > 0)) {__Pyx_RejectKeywords("__reduce_cython__", __pyx_kwds); return NULL;}
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_54__reduce_cython__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self));
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_54__reduce_cython__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -11035,7 +11035,7 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED st
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -11044,15 +11044,15 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_54__reduce_cython__(CYTHON_UNUSED st
 
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6matrix_8Matrix3D_57__setstate_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_6matrix_8Matrix3D_57__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_6matrix_8Matrix3D_57__setstate_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -11114,11 +11114,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("matrix.Matrix3D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6matrix_8Matrix3D_56__setstate_cython__(((struct __pyx_obj_6matrix_Matrix3D *)__pyx_v_self), __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_8cymatrix_6matrix_8Matrix3D_56__setstate_cython__(((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)__pyx_v_self), __pyx_v___pyx_state);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -11128,7 +11128,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6matrix_8Matrix3D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6matrix_Matrix3D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_8cymatrix_6matrix_8Matrix3D_56__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_8cymatrix_6matrix_Matrix3D *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -11142,17 +11142,17 @@ static PyObject *__pyx_pf_6matrix_8Matrix3D_56__setstate_cython__(CYTHON_UNUSED 
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("matrix.Matrix3D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cymatrix.matrix.Matrix3D.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 /* #### Code section: module_exttypes ### */
-static struct __pyx_vtabstruct_6matrix_Matrix2D __pyx_vtable_6matrix_Matrix2D;
+static struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix2D __pyx_vtable_8cymatrix_6matrix_Matrix2D;
 
-static PyObject *__pyx_tp_new_6matrix_Matrix2D(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_6matrix_Matrix2D *p;
+static PyObject *__pyx_tp_new_8cymatrix_6matrix_Matrix2D(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_8cymatrix_6matrix_Matrix2D *p;
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -11165,19 +11165,19 @@ static PyObject *__pyx_tp_new_6matrix_Matrix2D(PyTypeObject *t, CYTHON_UNUSED Py
   }
   if (unlikely(!o)) return 0;
   #endif
-  p = ((struct __pyx_obj_6matrix_Matrix2D *)o);
-  p->__pyx_vtab = __pyx_vtabptr_6matrix_Matrix2D;
-  if (unlikely(__pyx_pw_6matrix_8Matrix2D_1__cinit__(o, __pyx_mstate_global->__pyx_empty_tuple, NULL) < 0)) goto bad;
+  p = ((struct __pyx_obj_8cymatrix_6matrix_Matrix2D *)o);
+  p->__pyx_vtab = __pyx_vtabptr_8cymatrix_6matrix_Matrix2D;
+  if (unlikely(__pyx_pw_8cymatrix_6matrix_8Matrix2D_1__cinit__(o, __pyx_mstate_global->__pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_6matrix_Matrix2D(PyObject *o) {
+static void __pyx_tp_dealloc_8cymatrix_6matrix_Matrix2D(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_6matrix_Matrix2D) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_8cymatrix_6matrix_Matrix2D) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -11186,7 +11186,7 @@ static void __pyx_tp_dealloc_6matrix_Matrix2D(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_6matrix_8Matrix2D_3__dealloc__(o);
+    __pyx_pw_8cymatrix_6matrix_8Matrix2D_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -11200,7 +11200,7 @@ static void __pyx_tp_dealloc_6matrix_Matrix2D(PyObject *o) {
   #endif
 }
 
-static PyObject *__pyx_sq_item_6matrix_Matrix2D(PyObject *o, Py_ssize_t i) {
+static PyObject *__pyx_sq_item_8cymatrix_6matrix_Matrix2D(PyObject *o, Py_ssize_t i) {
   PyObject *r;
   PyObject *x = PyLong_FromSsize_t(i); if(!x) return 0;
   #if CYTHON_USE_TYPE_SLOTS || (!CYTHON_USE_TYPE_SPECS && __PYX_LIMITED_VERSION_HEX < 0x030A0000)
@@ -11212,9 +11212,9 @@ static PyObject *__pyx_sq_item_6matrix_Matrix2D(PyObject *o, Py_ssize_t i) {
   return r;
 }
 
-static int __pyx_mp_ass_subscript_6matrix_Matrix2D(PyObject *o, PyObject *i, PyObject *v) {
+static int __pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix2D(PyObject *o, PyObject *i, PyObject *v) {
   if (v) {
-    return __pyx_pw_6matrix_8Matrix2D_15__setitem__(o, i, v);
+    return __pyx_pw_8cymatrix_6matrix_8Matrix2D_15__setitem__(o, i, v);
   }
   else {
     __Pyx_TypeName o_type_name;
@@ -11226,25 +11226,25 @@ static int __pyx_mp_ass_subscript_6matrix_Matrix2D(PyObject *o, PyObject *i, PyO
   }
 }
 
-static PyObject *__pyx_tp_richcompare_6matrix_Matrix2D(PyObject *o1, PyObject *o2, int op) {
+static PyObject *__pyx_tp_richcompare_8cymatrix_6matrix_Matrix2D(PyObject *o1, PyObject *o2, int op) {
   switch (op) {
     case Py_EQ: {
-      return __pyx_pw_6matrix_8Matrix2D_33__eq__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_33__eq__(o1, o2);
     }
     case Py_NE: {
-      return __pyx_pw_6matrix_8Matrix2D_35__ne__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_35__ne__(o1, o2);
     }
     case Py_LT: {
-      return __pyx_pw_6matrix_8Matrix2D_37__lt__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_37__lt__(o1, o2);
     }
     case Py_GT: {
-      return __pyx_pw_6matrix_8Matrix2D_41__gt__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_41__gt__(o1, o2);
     }
     case Py_LE: {
-      return __pyx_pw_6matrix_8Matrix2D_39__le__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_39__le__(o1, o2);
     }
     case Py_GE: {
-      return __pyx_pw_6matrix_8Matrix2D_43__ge__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix2D_43__ge__(o1, o2);
     }
     default: {
       return __Pyx_NewRef(Py_NotImplemented);
@@ -11252,7 +11252,7 @@ static PyObject *__pyx_tp_richcompare_6matrix_Matrix2D(PyObject *o1, PyObject *o
   }
 }
 
-static CYTHON_INLINE PyObject *__pyx_nb_add_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_add_8cymatrix_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_add : NULL;
@@ -11261,33 +11261,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_add_6matrix_Matrix2D_maybe_call_slot(PyT
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_add_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_add_8cymatrix_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_add == &__pyx_nb_add_6matrix_Matrix2D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_add == &__pyx_nb_add_8cymatrix_6matrix_Matrix2D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix2D_17__add__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix2D_17__add__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_add == &__pyx_nb_add_6matrix_Matrix2D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_add == &__pyx_nb_add_8cymatrix_6matrix_Matrix2D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_right) {
-        return __pyx_nb_add_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_add_8cymatrix_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_subtract_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_subtract_8cymatrix_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_subtract : NULL;
@@ -11296,33 +11296,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_subtract_6matrix_Matrix2D_maybe_call_slo
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_subtract_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_subtract_8cymatrix_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_subtract == &__pyx_nb_subtract_6matrix_Matrix2D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_subtract == &__pyx_nb_subtract_8cymatrix_6matrix_Matrix2D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix2D_19__sub__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix2D_19__sub__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_subtract == &__pyx_nb_subtract_6matrix_Matrix2D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_subtract == &__pyx_nb_subtract_8cymatrix_6matrix_Matrix2D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_right) {
-        return __pyx_nb_subtract_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_subtract_8cymatrix_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_multiply_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_multiply_8cymatrix_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_multiply : NULL;
@@ -11331,33 +11331,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_multiply_6matrix_Matrix2D_maybe_call_slo
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_multiply_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_multiply_8cymatrix_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_multiply == &__pyx_nb_multiply_6matrix_Matrix2D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_multiply == &__pyx_nb_multiply_8cymatrix_6matrix_Matrix2D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix2D_21__mul__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix2D_21__mul__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_multiply == &__pyx_nb_multiply_6matrix_Matrix2D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_multiply == &__pyx_nb_multiply_8cymatrix_6matrix_Matrix2D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_right) {
-        return __pyx_pw_6matrix_8Matrix2D_29__rmul__(right, left);
+        return __pyx_pw_8cymatrix_6matrix_8Matrix2D_29__rmul__(right, left);
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_true_divide_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_true_divide : NULL;
@@ -11366,33 +11366,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_true_divide_6matrix_Matrix2D_maybe_call_
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_true_divide_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_6matrix_Matrix2D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix2D_31__truediv__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix2D_31__truediv__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_6matrix_Matrix2D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_right) {
-        return __pyx_nb_true_divide_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_matrix_multiply_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_matrix_multiply : NULL;
@@ -11401,115 +11401,115 @@ static CYTHON_INLINE PyObject *__pyx_nb_matrix_multiply_6matrix_Matrix2D_maybe_c
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_matrix_multiply_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_matrix_multiply == &__pyx_nb_matrix_multiply_6matrix_Matrix2D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_matrix_multiply == &__pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix2D_23__matmul__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix2D_23__matmul__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_matrix_multiply == &__pyx_nb_matrix_multiply_6matrix_Matrix2D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_matrix_multiply == &__pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D);
     if (maybe_self_is_right) {
-        return __pyx_nb_matrix_multiply_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static PyObject *__pyx_getprop_6matrix_8Matrix2D_rows(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6matrix_8Matrix2D_4rows_1__get__(o);
+static PyObject *__pyx_getprop_8cymatrix_6matrix_8Matrix2D_rows(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8cymatrix_6matrix_8Matrix2D_4rows_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_6matrix_8Matrix2D_cols(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6matrix_8Matrix2D_4cols_1__get__(o);
+static PyObject *__pyx_getprop_8cymatrix_6matrix_8Matrix2D_cols(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8cymatrix_6matrix_8Matrix2D_4cols_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_6matrix_Matrix2D[] = {
-  {"__add__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_17__add__, METH_O|METH_COEXIST, 0},
-  {"__sub__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_19__sub__, METH_O|METH_COEXIST, 0},
-  {"__mul__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_21__mul__, METH_O|METH_COEXIST, 0},
-  {"__matmul__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_23__matmul__, METH_O|METH_COEXIST, 0},
-  {"__rmul__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_29__rmul__, METH_O|METH_COEXIST, 0},
-  {"__truediv__", (PyCFunction)__pyx_pw_6matrix_8Matrix2D_31__truediv__, METH_O|METH_COEXIST, 0},
-  {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_47apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix2D_46apply},
-  {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_49apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix2D_48apply_inplace},
-  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+static PyMethodDef __pyx_methods_8cymatrix_6matrix_Matrix2D[] = {
+  {"__add__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_17__add__, METH_O|METH_COEXIST, 0},
+  {"__sub__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_19__sub__, METH_O|METH_COEXIST, 0},
+  {"__mul__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_21__mul__, METH_O|METH_COEXIST, 0},
+  {"__matmul__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_23__matmul__, METH_O|METH_COEXIST, 0},
+  {"__rmul__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_29__rmul__, METH_O|METH_COEXIST, 0},
+  {"__truediv__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix2D_31__truediv__, METH_O|METH_COEXIST, 0},
+  {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_47apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix2D_46apply},
+  {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_49apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix2D_48apply_inplace},
+  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_6matrix_Matrix2D[] = {
-  {"rows", __pyx_getprop_6matrix_8Matrix2D_rows, 0, 0, 0},
-  {"cols", __pyx_getprop_6matrix_8Matrix2D_cols, 0, 0, 0},
+static struct PyGetSetDef __pyx_getsets_8cymatrix_6matrix_Matrix2D[] = {
+  {"rows", __pyx_getprop_8cymatrix_6matrix_8Matrix2D_rows, 0, 0, 0},
+  {"cols", __pyx_getprop_8cymatrix_6matrix_8Matrix2D_cols, 0, 0, 0},
   {0, 0, 0, 0, 0}
 };
 #if CYTHON_USE_TYPE_SPECS
 #if !CYTHON_COMPILING_IN_LIMITED_API
 
 static PyBufferProcs __pyx_tp_as_buffer_Matrix2D = {
-  __pyx_pw_6matrix_8Matrix2D_7__getbuffer__, /*bf_getbuffer*/
-  __pyx_pw_6matrix_8Matrix2D_9__releasebuffer__, /*bf_releasebuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_7__getbuffer__, /*bf_getbuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_9__releasebuffer__, /*bf_releasebuffer*/
 };
 #endif
-static PyType_Slot __pyx_type_6matrix_Matrix2D_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_6matrix_Matrix2D},
-  {Py_tp_repr, (void *)__pyx_pw_6matrix_8Matrix2D_11__repr__},
-  {Py_nb_add, (void *)__pyx_nb_add_6matrix_Matrix2D},
-  {Py_nb_subtract, (void *)__pyx_nb_subtract_6matrix_Matrix2D},
-  {Py_nb_multiply, (void *)__pyx_nb_multiply_6matrix_Matrix2D},
-  {Py_nb_absolute, (void *)__pyx_pw_6matrix_8Matrix2D_45__abs__},
-  {Py_nb_true_divide, (void *)__pyx_nb_true_divide_6matrix_Matrix2D},
-  {Py_nb_matrix_multiply, (void *)__pyx_nb_matrix_multiply_6matrix_Matrix2D},
-  {Py_sq_length, (void *)__pyx_pw_6matrix_8Matrix2D_27__len__},
-  {Py_sq_item, (void *)__pyx_sq_item_6matrix_Matrix2D},
-  {Py_mp_length, (void *)__pyx_pw_6matrix_8Matrix2D_27__len__},
-  {Py_mp_subscript, (void *)__pyx_pw_6matrix_8Matrix2D_13__getitem__},
-  {Py_mp_ass_subscript, (void *)__pyx_mp_ass_subscript_6matrix_Matrix2D},
-  {Py_tp_str, (void *)__pyx_pw_6matrix_8Matrix2D_25__str__},
+static PyType_Slot __pyx_type_8cymatrix_6matrix_Matrix2D_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_8cymatrix_6matrix_Matrix2D},
+  {Py_tp_repr, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_11__repr__},
+  {Py_nb_add, (void *)__pyx_nb_add_8cymatrix_6matrix_Matrix2D},
+  {Py_nb_subtract, (void *)__pyx_nb_subtract_8cymatrix_6matrix_Matrix2D},
+  {Py_nb_multiply, (void *)__pyx_nb_multiply_8cymatrix_6matrix_Matrix2D},
+  {Py_nb_absolute, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_45__abs__},
+  {Py_nb_true_divide, (void *)__pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D},
+  {Py_nb_matrix_multiply, (void *)__pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D},
+  {Py_sq_length, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__},
+  {Py_sq_item, (void *)__pyx_sq_item_8cymatrix_6matrix_Matrix2D},
+  {Py_mp_length, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__},
+  {Py_mp_subscript, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_13__getitem__},
+  {Py_mp_ass_subscript, (void *)__pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix2D},
+  {Py_tp_str, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_25__str__},
   #if defined(Py_bf_getbuffer)
-  {Py_bf_getbuffer, (void *)__pyx_pw_6matrix_8Matrix2D_7__getbuffer__},
+  {Py_bf_getbuffer, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_7__getbuffer__},
   #endif
   #if defined(Py_bf_releasebuffer)
-  {Py_bf_releasebuffer, (void *)__pyx_pw_6matrix_8Matrix2D_9__releasebuffer__},
+  {Py_bf_releasebuffer, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_9__releasebuffer__},
   #endif
   {Py_tp_doc, (void *)PyDoc_STR("A 2D row-major matrix with contiguous data storage")},
-  {Py_tp_richcompare, (void *)__pyx_tp_richcompare_6matrix_Matrix2D},
-  {Py_tp_methods, (void *)__pyx_methods_6matrix_Matrix2D},
-  {Py_tp_getset, (void *)__pyx_getsets_6matrix_Matrix2D},
-  {Py_tp_init, (void *)__pyx_pw_6matrix_8Matrix2D_5__init__},
-  {Py_tp_new, (void *)__pyx_tp_new_6matrix_Matrix2D},
+  {Py_tp_richcompare, (void *)__pyx_tp_richcompare_8cymatrix_6matrix_Matrix2D},
+  {Py_tp_methods, (void *)__pyx_methods_8cymatrix_6matrix_Matrix2D},
+  {Py_tp_getset, (void *)__pyx_getsets_8cymatrix_6matrix_Matrix2D},
+  {Py_tp_init, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix2D_5__init__},
+  {Py_tp_new, (void *)__pyx_tp_new_8cymatrix_6matrix_Matrix2D},
   {0, 0},
 };
-static PyType_Spec __pyx_type_6matrix_Matrix2D_spec = {
-  "matrix.Matrix2D",
-  sizeof(struct __pyx_obj_6matrix_Matrix2D),
+static PyType_Spec __pyx_type_8cymatrix_6matrix_Matrix2D_spec = {
+  "cymatrix.matrix.Matrix2D",
+  sizeof(struct __pyx_obj_8cymatrix_6matrix_Matrix2D),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE,
-  __pyx_type_6matrix_Matrix2D_slots,
+  __pyx_type_8cymatrix_6matrix_Matrix2D_slots,
 };
 #else
 
 static PyNumberMethods __pyx_tp_as_number_Matrix2D = {
-  __pyx_nb_add_6matrix_Matrix2D, /*nb_add*/
-  __pyx_nb_subtract_6matrix_Matrix2D, /*nb_subtract*/
-  __pyx_nb_multiply_6matrix_Matrix2D, /*nb_multiply*/
+  __pyx_nb_add_8cymatrix_6matrix_Matrix2D, /*nb_add*/
+  __pyx_nb_subtract_8cymatrix_6matrix_Matrix2D, /*nb_subtract*/
+  __pyx_nb_multiply_8cymatrix_6matrix_Matrix2D, /*nb_multiply*/
   0, /*nb_remainder*/
   0, /*nb_divmod*/
   0, /*nb_power*/
   0, /*nb_negative*/
   0, /*nb_positive*/
-  __pyx_pw_6matrix_8Matrix2D_45__abs__, /*nb_absolute*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_45__abs__, /*nb_absolute*/
   0, /*nb_bool*/
   0, /*nb_invert*/
   0, /*nb_lshift*/
@@ -11531,19 +11531,19 @@ static PyNumberMethods __pyx_tp_as_number_Matrix2D = {
   0, /*nb_inplace_xor*/
   0, /*nb_inplace_or*/
   0, /*nb_floor_divide*/
-  __pyx_nb_true_divide_6matrix_Matrix2D, /*nb_true_divide*/
+  __pyx_nb_true_divide_8cymatrix_6matrix_Matrix2D, /*nb_true_divide*/
   0, /*nb_inplace_floor_divide*/
   0, /*nb_inplace_true_divide*/
   0, /*nb_index*/
-  __pyx_nb_matrix_multiply_6matrix_Matrix2D, /*nb_matrix_multiply*/
+  __pyx_nb_matrix_multiply_8cymatrix_6matrix_Matrix2D, /*nb_matrix_multiply*/
   0, /*nb_inplace_matrix_multiply*/
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_Matrix2D = {
-  __pyx_pw_6matrix_8Matrix2D_27__len__, /*sq_length*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__, /*sq_length*/
   0, /*sq_concat*/
   0, /*sq_repeat*/
-  __pyx_sq_item_6matrix_Matrix2D, /*sq_item*/
+  __pyx_sq_item_8cymatrix_6matrix_Matrix2D, /*sq_item*/
   0, /*sq_slice*/
   0, /*sq_ass_item*/
   0, /*sq_ass_slice*/
@@ -11553,22 +11553,22 @@ static PySequenceMethods __pyx_tp_as_sequence_Matrix2D = {
 };
 
 static PyMappingMethods __pyx_tp_as_mapping_Matrix2D = {
-  __pyx_pw_6matrix_8Matrix2D_27__len__, /*mp_length*/
-  __pyx_pw_6matrix_8Matrix2D_13__getitem__, /*mp_subscript*/
-  __pyx_mp_ass_subscript_6matrix_Matrix2D, /*mp_ass_subscript*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_27__len__, /*mp_length*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_13__getitem__, /*mp_subscript*/
+  __pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix2D, /*mp_ass_subscript*/
 };
 
 static PyBufferProcs __pyx_tp_as_buffer_Matrix2D = {
-  __pyx_pw_6matrix_8Matrix2D_7__getbuffer__, /*bf_getbuffer*/
-  __pyx_pw_6matrix_8Matrix2D_9__releasebuffer__, /*bf_releasebuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_7__getbuffer__, /*bf_getbuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_9__releasebuffer__, /*bf_releasebuffer*/
 };
 
-static PyTypeObject __pyx_type_6matrix_Matrix2D = {
+static PyTypeObject __pyx_type_8cymatrix_6matrix_Matrix2D = {
   PyVarObject_HEAD_INIT(0, 0)
-  "matrix.""Matrix2D", /*tp_name*/
-  sizeof(struct __pyx_obj_6matrix_Matrix2D), /*tp_basicsize*/
+  "cymatrix.matrix.""Matrix2D", /*tp_name*/
+  sizeof(struct __pyx_obj_8cymatrix_6matrix_Matrix2D), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_6matrix_Matrix2D, /*tp_dealloc*/
+  __pyx_tp_dealloc_8cymatrix_6matrix_Matrix2D, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -11578,13 +11578,13 @@ static PyTypeObject __pyx_type_6matrix_Matrix2D = {
   0, /*tp_getattr*/
   0, /*tp_setattr*/
   0, /*tp_as_async*/
-  __pyx_pw_6matrix_8Matrix2D_11__repr__, /*tp_repr*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_11__repr__, /*tp_repr*/
   &__pyx_tp_as_number_Matrix2D, /*tp_as_number*/
   &__pyx_tp_as_sequence_Matrix2D, /*tp_as_sequence*/
   &__pyx_tp_as_mapping_Matrix2D, /*tp_as_mapping*/
   0, /*tp_hash*/
   0, /*tp_call*/
-  __pyx_pw_6matrix_8Matrix2D_25__str__, /*tp_str*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_25__str__, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   &__pyx_tp_as_buffer_Matrix2D, /*tp_as_buffer*/
@@ -11592,13 +11592,13 @@ static PyTypeObject __pyx_type_6matrix_Matrix2D = {
   PyDoc_STR("A 2D row-major matrix with contiguous data storage"), /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
-  __pyx_tp_richcompare_6matrix_Matrix2D, /*tp_richcompare*/
+  __pyx_tp_richcompare_8cymatrix_6matrix_Matrix2D, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_6matrix_Matrix2D, /*tp_methods*/
+  __pyx_methods_8cymatrix_6matrix_Matrix2D, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_6matrix_Matrix2D, /*tp_getset*/
+  __pyx_getsets_8cymatrix_6matrix_Matrix2D, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -11606,9 +11606,9 @@ static PyTypeObject __pyx_type_6matrix_Matrix2D = {
   #if !CYTHON_USE_TYPE_SPECS
   0, /*tp_dictoffset*/
   #endif
-  __pyx_pw_6matrix_8Matrix2D_5__init__, /*tp_init*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix2D_5__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_6matrix_Matrix2D, /*tp_new*/
+  __pyx_tp_new_8cymatrix_6matrix_Matrix2D, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -11640,10 +11640,10 @@ static PyTypeObject __pyx_type_6matrix_Matrix2D = {
   #endif
 };
 #endif
-static struct __pyx_vtabstruct_6matrix_Matrix3D __pyx_vtable_6matrix_Matrix3D;
+static struct __pyx_vtabstruct_8cymatrix_6matrix_Matrix3D __pyx_vtable_8cymatrix_6matrix_Matrix3D;
 
-static PyObject *__pyx_tp_new_6matrix_Matrix3D(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_6matrix_Matrix3D *p;
+static PyObject *__pyx_tp_new_8cymatrix_6matrix_Matrix3D(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_8cymatrix_6matrix_Matrix3D *p;
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -11656,19 +11656,19 @@ static PyObject *__pyx_tp_new_6matrix_Matrix3D(PyTypeObject *t, CYTHON_UNUSED Py
   }
   if (unlikely(!o)) return 0;
   #endif
-  p = ((struct __pyx_obj_6matrix_Matrix3D *)o);
-  p->__pyx_vtab = __pyx_vtabptr_6matrix_Matrix3D;
-  if (unlikely(__pyx_pw_6matrix_8Matrix3D_1__cinit__(o, __pyx_mstate_global->__pyx_empty_tuple, NULL) < 0)) goto bad;
+  p = ((struct __pyx_obj_8cymatrix_6matrix_Matrix3D *)o);
+  p->__pyx_vtab = __pyx_vtabptr_8cymatrix_6matrix_Matrix3D;
+  if (unlikely(__pyx_pw_8cymatrix_6matrix_8Matrix3D_1__cinit__(o, __pyx_mstate_global->__pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_6matrix_Matrix3D(PyObject *o) {
+static void __pyx_tp_dealloc_8cymatrix_6matrix_Matrix3D(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_6matrix_Matrix3D) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_8cymatrix_6matrix_Matrix3D) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -11677,7 +11677,7 @@ static void __pyx_tp_dealloc_6matrix_Matrix3D(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_6matrix_8Matrix3D_3__dealloc__(o);
+    __pyx_pw_8cymatrix_6matrix_8Matrix3D_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -11691,7 +11691,7 @@ static void __pyx_tp_dealloc_6matrix_Matrix3D(PyObject *o) {
   #endif
 }
 
-static PyObject *__pyx_sq_item_6matrix_Matrix3D(PyObject *o, Py_ssize_t i) {
+static PyObject *__pyx_sq_item_8cymatrix_6matrix_Matrix3D(PyObject *o, Py_ssize_t i) {
   PyObject *r;
   PyObject *x = PyLong_FromSsize_t(i); if(!x) return 0;
   #if CYTHON_USE_TYPE_SLOTS || (!CYTHON_USE_TYPE_SPECS && __PYX_LIMITED_VERSION_HEX < 0x030A0000)
@@ -11703,9 +11703,9 @@ static PyObject *__pyx_sq_item_6matrix_Matrix3D(PyObject *o, Py_ssize_t i) {
   return r;
 }
 
-static int __pyx_mp_ass_subscript_6matrix_Matrix3D(PyObject *o, PyObject *i, PyObject *v) {
+static int __pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix3D(PyObject *o, PyObject *i, PyObject *v) {
   if (v) {
-    return __pyx_pw_6matrix_8Matrix3D_15__setitem__(o, i, v);
+    return __pyx_pw_8cymatrix_6matrix_8Matrix3D_15__setitem__(o, i, v);
   }
   else {
     __Pyx_TypeName o_type_name;
@@ -11717,25 +11717,25 @@ static int __pyx_mp_ass_subscript_6matrix_Matrix3D(PyObject *o, PyObject *i, PyO
   }
 }
 
-static PyObject *__pyx_tp_richcompare_6matrix_Matrix3D(PyObject *o1, PyObject *o2, int op) {
+static PyObject *__pyx_tp_richcompare_8cymatrix_6matrix_Matrix3D(PyObject *o1, PyObject *o2, int op) {
   switch (op) {
     case Py_EQ: {
-      return __pyx_pw_6matrix_8Matrix3D_31__eq__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_31__eq__(o1, o2);
     }
     case Py_NE: {
-      return __pyx_pw_6matrix_8Matrix3D_33__ne__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_33__ne__(o1, o2);
     }
     case Py_LT: {
-      return __pyx_pw_6matrix_8Matrix3D_35__lt__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_35__lt__(o1, o2);
     }
     case Py_GT: {
-      return __pyx_pw_6matrix_8Matrix3D_39__gt__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_39__gt__(o1, o2);
     }
     case Py_LE: {
-      return __pyx_pw_6matrix_8Matrix3D_37__le__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_37__le__(o1, o2);
     }
     case Py_GE: {
-      return __pyx_pw_6matrix_8Matrix3D_41__ge__(o1, o2);
+      return __pyx_pw_8cymatrix_6matrix_8Matrix3D_41__ge__(o1, o2);
     }
     default: {
       return __Pyx_NewRef(Py_NotImplemented);
@@ -11743,7 +11743,7 @@ static PyObject *__pyx_tp_richcompare_6matrix_Matrix3D(PyObject *o1, PyObject *o
   }
 }
 
-static CYTHON_INLINE PyObject *__pyx_nb_add_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_add_8cymatrix_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_add : NULL;
@@ -11752,33 +11752,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_add_6matrix_Matrix3D_maybe_call_slot(PyT
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_add_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_add_8cymatrix_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_add == &__pyx_nb_add_6matrix_Matrix3D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_add == &__pyx_nb_add_8cymatrix_6matrix_Matrix3D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix3D_17__add__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix3D_17__add__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_add == &__pyx_nb_add_6matrix_Matrix3D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_add == &__pyx_nb_add_8cymatrix_6matrix_Matrix3D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_right) {
-        return __pyx_nb_add_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_add_8cymatrix_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_subtract_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_subtract_8cymatrix_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_subtract : NULL;
@@ -11787,33 +11787,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_subtract_6matrix_Matrix3D_maybe_call_slo
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_subtract_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_subtract_8cymatrix_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_subtract == &__pyx_nb_subtract_6matrix_Matrix3D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_subtract == &__pyx_nb_subtract_8cymatrix_6matrix_Matrix3D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix3D_19__sub__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix3D_19__sub__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_subtract == &__pyx_nb_subtract_6matrix_Matrix3D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_subtract == &__pyx_nb_subtract_8cymatrix_6matrix_Matrix3D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_right) {
-        return __pyx_nb_subtract_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_subtract_8cymatrix_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_multiply_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_multiply_8cymatrix_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_multiply : NULL;
@@ -11822,33 +11822,33 @@ static CYTHON_INLINE PyObject *__pyx_nb_multiply_6matrix_Matrix3D_maybe_call_slo
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_multiply_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_multiply_8cymatrix_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_multiply == &__pyx_nb_multiply_6matrix_Matrix3D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_multiply == &__pyx_nb_multiply_8cymatrix_6matrix_Matrix3D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix3D_21__mul__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix3D_21__mul__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_multiply == &__pyx_nb_multiply_6matrix_Matrix3D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_multiply == &__pyx_nb_multiply_8cymatrix_6matrix_Matrix3D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_right) {
-        return __pyx_pw_6matrix_8Matrix3D_27__rmul__(right, left);
+        return __pyx_pw_8cymatrix_6matrix_8Matrix3D_27__rmul__(right, left);
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static CYTHON_INLINE PyObject *__pyx_nb_true_divide_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
+static CYTHON_INLINE PyObject *__pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D_maybe_call_slot(PyTypeObject* type, PyObject *left, PyObject *right ) {
     binaryfunc slot;
 #if CYTHON_USE_TYPE_SLOTS
     slot = type->tp_as_number ? type->tp_as_number->nb_true_divide : NULL;
@@ -11857,118 +11857,118 @@ static CYTHON_INLINE PyObject *__pyx_nb_true_divide_6matrix_Matrix3D_maybe_call_
 #endif
     return slot ? slot(left, right ) : __Pyx_NewRef(Py_NotImplemented);
 }
-static PyObject *__pyx_nb_true_divide_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
+static PyObject *__pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D(PyObject *left, PyObject *right ) {
     int maybe_self_is_left, maybe_self_is_right = 0;
     maybe_self_is_left = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_6matrix_Matrix3D)
+            || (Py_TYPE(left)->tp_as_number && Py_TYPE(left)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D)
 #endif
-            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || __Pyx_TypeCheck(left, __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_left) {
         PyObject *res;
-        res = __pyx_pw_6matrix_8Matrix3D_29__truediv__(left, right);
+        res = __pyx_pw_8cymatrix_6matrix_8Matrix3D_29__truediv__(left, right);
         if (res != Py_NotImplemented) return res;
         Py_DECREF(res);
     }
     maybe_self_is_right = Py_TYPE(left) == Py_TYPE(right)
 #if CYTHON_USE_TYPE_SLOTS
-            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_6matrix_Matrix3D)
+            || (Py_TYPE(right)->tp_as_number && Py_TYPE(right)->tp_as_number->nb_true_divide == &__pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D)
 #endif
-            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D);
+            || PyType_IsSubtype(Py_TYPE(right), __pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D);
     if (maybe_self_is_right) {
-        return __pyx_nb_true_divide_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
+        return __pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D_maybe_call_slot(__Pyx_PyType_GetSlot(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, tp_base, PyTypeObject*), left, right );
     }
     return __Pyx_NewRef(Py_NotImplemented);
 }
 
 
 
-static PyObject *__pyx_getprop_6matrix_8Matrix3D_rows(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6matrix_8Matrix3D_4rows_1__get__(o);
+static PyObject *__pyx_getprop_8cymatrix_6matrix_8Matrix3D_rows(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8cymatrix_6matrix_8Matrix3D_4rows_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_6matrix_8Matrix3D_cols(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6matrix_8Matrix3D_4cols_1__get__(o);
+static PyObject *__pyx_getprop_8cymatrix_6matrix_8Matrix3D_cols(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8cymatrix_6matrix_8Matrix3D_4cols_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_6matrix_8Matrix3D_planes(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_6matrix_8Matrix3D_6planes_1__get__(o);
+static PyObject *__pyx_getprop_8cymatrix_6matrix_8Matrix3D_planes(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_8cymatrix_6matrix_8Matrix3D_6planes_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_6matrix_Matrix3D[] = {
-  {"__add__", (PyCFunction)__pyx_pw_6matrix_8Matrix3D_17__add__, METH_O|METH_COEXIST, 0},
-  {"__sub__", (PyCFunction)__pyx_pw_6matrix_8Matrix3D_19__sub__, METH_O|METH_COEXIST, 0},
-  {"__mul__", (PyCFunction)__pyx_pw_6matrix_8Matrix3D_21__mul__, METH_O|METH_COEXIST, 0},
-  {"__rmul__", (PyCFunction)__pyx_pw_6matrix_8Matrix3D_27__rmul__, METH_O|METH_COEXIST, 0},
-  {"__truediv__", (PyCFunction)__pyx_pw_6matrix_8Matrix3D_29__truediv__, METH_O|METH_COEXIST, 0},
-  {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_45apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix3D_44apply},
-  {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_47apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_6matrix_8Matrix3D_46apply_inplace},
-  {"offset", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_49offset, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+static PyMethodDef __pyx_methods_8cymatrix_6matrix_Matrix3D[] = {
+  {"__add__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix3D_17__add__, METH_O|METH_COEXIST, 0},
+  {"__sub__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix3D_19__sub__, METH_O|METH_COEXIST, 0},
+  {"__mul__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix3D_21__mul__, METH_O|METH_COEXIST, 0},
+  {"__rmul__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix3D_27__rmul__, METH_O|METH_COEXIST, 0},
+  {"__truediv__", (PyCFunction)__pyx_pw_8cymatrix_6matrix_8Matrix3D_29__truediv__, METH_O|METH_COEXIST, 0},
+  {"apply", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_45apply, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix3D_44apply},
+  {"apply_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_47apply_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_8cymatrix_6matrix_8Matrix3D_46apply_inplace},
+  {"offset", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_49offset, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_6matrix_Matrix3D[] = {
-  {"rows", __pyx_getprop_6matrix_8Matrix3D_rows, 0, 0, 0},
-  {"cols", __pyx_getprop_6matrix_8Matrix3D_cols, 0, 0, 0},
-  {"planes", __pyx_getprop_6matrix_8Matrix3D_planes, 0, 0, 0},
+static struct PyGetSetDef __pyx_getsets_8cymatrix_6matrix_Matrix3D[] = {
+  {"rows", __pyx_getprop_8cymatrix_6matrix_8Matrix3D_rows, 0, 0, 0},
+  {"cols", __pyx_getprop_8cymatrix_6matrix_8Matrix3D_cols, 0, 0, 0},
+  {"planes", __pyx_getprop_8cymatrix_6matrix_8Matrix3D_planes, 0, 0, 0},
   {0, 0, 0, 0, 0}
 };
 #if CYTHON_USE_TYPE_SPECS
 #if !CYTHON_COMPILING_IN_LIMITED_API
 
 static PyBufferProcs __pyx_tp_as_buffer_Matrix3D = {
-  __pyx_pw_6matrix_8Matrix3D_7__getbuffer__, /*bf_getbuffer*/
-  __pyx_pw_6matrix_8Matrix3D_9__releasebuffer__, /*bf_releasebuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_7__getbuffer__, /*bf_getbuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_9__releasebuffer__, /*bf_releasebuffer*/
 };
 #endif
-static PyType_Slot __pyx_type_6matrix_Matrix3D_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_6matrix_Matrix3D},
-  {Py_tp_repr, (void *)__pyx_pw_6matrix_8Matrix3D_11__repr__},
-  {Py_nb_add, (void *)__pyx_nb_add_6matrix_Matrix3D},
-  {Py_nb_subtract, (void *)__pyx_nb_subtract_6matrix_Matrix3D},
-  {Py_nb_multiply, (void *)__pyx_nb_multiply_6matrix_Matrix3D},
-  {Py_nb_absolute, (void *)__pyx_pw_6matrix_8Matrix3D_43__abs__},
-  {Py_nb_true_divide, (void *)__pyx_nb_true_divide_6matrix_Matrix3D},
-  {Py_sq_length, (void *)__pyx_pw_6matrix_8Matrix3D_25__len__},
-  {Py_sq_item, (void *)__pyx_sq_item_6matrix_Matrix3D},
-  {Py_mp_length, (void *)__pyx_pw_6matrix_8Matrix3D_25__len__},
-  {Py_mp_subscript, (void *)__pyx_pw_6matrix_8Matrix3D_13__getitem__},
-  {Py_mp_ass_subscript, (void *)__pyx_mp_ass_subscript_6matrix_Matrix3D},
-  {Py_tp_str, (void *)__pyx_pw_6matrix_8Matrix3D_23__str__},
+static PyType_Slot __pyx_type_8cymatrix_6matrix_Matrix3D_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_8cymatrix_6matrix_Matrix3D},
+  {Py_tp_repr, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_11__repr__},
+  {Py_nb_add, (void *)__pyx_nb_add_8cymatrix_6matrix_Matrix3D},
+  {Py_nb_subtract, (void *)__pyx_nb_subtract_8cymatrix_6matrix_Matrix3D},
+  {Py_nb_multiply, (void *)__pyx_nb_multiply_8cymatrix_6matrix_Matrix3D},
+  {Py_nb_absolute, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_43__abs__},
+  {Py_nb_true_divide, (void *)__pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D},
+  {Py_sq_length, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__},
+  {Py_sq_item, (void *)__pyx_sq_item_8cymatrix_6matrix_Matrix3D},
+  {Py_mp_length, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__},
+  {Py_mp_subscript, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_13__getitem__},
+  {Py_mp_ass_subscript, (void *)__pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix3D},
+  {Py_tp_str, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_23__str__},
   #if defined(Py_bf_getbuffer)
-  {Py_bf_getbuffer, (void *)__pyx_pw_6matrix_8Matrix3D_7__getbuffer__},
+  {Py_bf_getbuffer, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_7__getbuffer__},
   #endif
   #if defined(Py_bf_releasebuffer)
-  {Py_bf_releasebuffer, (void *)__pyx_pw_6matrix_8Matrix3D_9__releasebuffer__},
+  {Py_bf_releasebuffer, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_9__releasebuffer__},
   #endif
-  {Py_tp_richcompare, (void *)__pyx_tp_richcompare_6matrix_Matrix3D},
-  {Py_tp_methods, (void *)__pyx_methods_6matrix_Matrix3D},
-  {Py_tp_getset, (void *)__pyx_getsets_6matrix_Matrix3D},
-  {Py_tp_init, (void *)__pyx_pw_6matrix_8Matrix3D_5__init__},
-  {Py_tp_new, (void *)__pyx_tp_new_6matrix_Matrix3D},
+  {Py_tp_richcompare, (void *)__pyx_tp_richcompare_8cymatrix_6matrix_Matrix3D},
+  {Py_tp_methods, (void *)__pyx_methods_8cymatrix_6matrix_Matrix3D},
+  {Py_tp_getset, (void *)__pyx_getsets_8cymatrix_6matrix_Matrix3D},
+  {Py_tp_init, (void *)__pyx_pw_8cymatrix_6matrix_8Matrix3D_5__init__},
+  {Py_tp_new, (void *)__pyx_tp_new_8cymatrix_6matrix_Matrix3D},
   {0, 0},
 };
-static PyType_Spec __pyx_type_6matrix_Matrix3D_spec = {
-  "matrix.Matrix3D",
-  sizeof(struct __pyx_obj_6matrix_Matrix3D),
+static PyType_Spec __pyx_type_8cymatrix_6matrix_Matrix3D_spec = {
+  "cymatrix.matrix.Matrix3D",
+  sizeof(struct __pyx_obj_8cymatrix_6matrix_Matrix3D),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE,
-  __pyx_type_6matrix_Matrix3D_slots,
+  __pyx_type_8cymatrix_6matrix_Matrix3D_slots,
 };
 #else
 
 static PyNumberMethods __pyx_tp_as_number_Matrix3D = {
-  __pyx_nb_add_6matrix_Matrix3D, /*nb_add*/
-  __pyx_nb_subtract_6matrix_Matrix3D, /*nb_subtract*/
-  __pyx_nb_multiply_6matrix_Matrix3D, /*nb_multiply*/
+  __pyx_nb_add_8cymatrix_6matrix_Matrix3D, /*nb_add*/
+  __pyx_nb_subtract_8cymatrix_6matrix_Matrix3D, /*nb_subtract*/
+  __pyx_nb_multiply_8cymatrix_6matrix_Matrix3D, /*nb_multiply*/
   0, /*nb_remainder*/
   0, /*nb_divmod*/
   0, /*nb_power*/
   0, /*nb_negative*/
   0, /*nb_positive*/
-  __pyx_pw_6matrix_8Matrix3D_43__abs__, /*nb_absolute*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_43__abs__, /*nb_absolute*/
   0, /*nb_bool*/
   0, /*nb_invert*/
   0, /*nb_lshift*/
@@ -11990,7 +11990,7 @@ static PyNumberMethods __pyx_tp_as_number_Matrix3D = {
   0, /*nb_inplace_xor*/
   0, /*nb_inplace_or*/
   0, /*nb_floor_divide*/
-  __pyx_nb_true_divide_6matrix_Matrix3D, /*nb_true_divide*/
+  __pyx_nb_true_divide_8cymatrix_6matrix_Matrix3D, /*nb_true_divide*/
   0, /*nb_inplace_floor_divide*/
   0, /*nb_inplace_true_divide*/
   0, /*nb_index*/
@@ -11999,10 +11999,10 @@ static PyNumberMethods __pyx_tp_as_number_Matrix3D = {
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_Matrix3D = {
-  __pyx_pw_6matrix_8Matrix3D_25__len__, /*sq_length*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__, /*sq_length*/
   0, /*sq_concat*/
   0, /*sq_repeat*/
-  __pyx_sq_item_6matrix_Matrix3D, /*sq_item*/
+  __pyx_sq_item_8cymatrix_6matrix_Matrix3D, /*sq_item*/
   0, /*sq_slice*/
   0, /*sq_ass_item*/
   0, /*sq_ass_slice*/
@@ -12012,22 +12012,22 @@ static PySequenceMethods __pyx_tp_as_sequence_Matrix3D = {
 };
 
 static PyMappingMethods __pyx_tp_as_mapping_Matrix3D = {
-  __pyx_pw_6matrix_8Matrix3D_25__len__, /*mp_length*/
-  __pyx_pw_6matrix_8Matrix3D_13__getitem__, /*mp_subscript*/
-  __pyx_mp_ass_subscript_6matrix_Matrix3D, /*mp_ass_subscript*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_25__len__, /*mp_length*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_13__getitem__, /*mp_subscript*/
+  __pyx_mp_ass_subscript_8cymatrix_6matrix_Matrix3D, /*mp_ass_subscript*/
 };
 
 static PyBufferProcs __pyx_tp_as_buffer_Matrix3D = {
-  __pyx_pw_6matrix_8Matrix3D_7__getbuffer__, /*bf_getbuffer*/
-  __pyx_pw_6matrix_8Matrix3D_9__releasebuffer__, /*bf_releasebuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_7__getbuffer__, /*bf_getbuffer*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_9__releasebuffer__, /*bf_releasebuffer*/
 };
 
-static PyTypeObject __pyx_type_6matrix_Matrix3D = {
+static PyTypeObject __pyx_type_8cymatrix_6matrix_Matrix3D = {
   PyVarObject_HEAD_INIT(0, 0)
-  "matrix.""Matrix3D", /*tp_name*/
-  sizeof(struct __pyx_obj_6matrix_Matrix3D), /*tp_basicsize*/
+  "cymatrix.matrix.""Matrix3D", /*tp_name*/
+  sizeof(struct __pyx_obj_8cymatrix_6matrix_Matrix3D), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_6matrix_Matrix3D, /*tp_dealloc*/
+  __pyx_tp_dealloc_8cymatrix_6matrix_Matrix3D, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -12037,13 +12037,13 @@ static PyTypeObject __pyx_type_6matrix_Matrix3D = {
   0, /*tp_getattr*/
   0, /*tp_setattr*/
   0, /*tp_as_async*/
-  __pyx_pw_6matrix_8Matrix3D_11__repr__, /*tp_repr*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_11__repr__, /*tp_repr*/
   &__pyx_tp_as_number_Matrix3D, /*tp_as_number*/
   &__pyx_tp_as_sequence_Matrix3D, /*tp_as_sequence*/
   &__pyx_tp_as_mapping_Matrix3D, /*tp_as_mapping*/
   0, /*tp_hash*/
   0, /*tp_call*/
-  __pyx_pw_6matrix_8Matrix3D_23__str__, /*tp_str*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_23__str__, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   &__pyx_tp_as_buffer_Matrix3D, /*tp_as_buffer*/
@@ -12051,13 +12051,13 @@ static PyTypeObject __pyx_type_6matrix_Matrix3D = {
   0, /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
-  __pyx_tp_richcompare_6matrix_Matrix3D, /*tp_richcompare*/
+  __pyx_tp_richcompare_8cymatrix_6matrix_Matrix3D, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_6matrix_Matrix3D, /*tp_methods*/
+  __pyx_methods_8cymatrix_6matrix_Matrix3D, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_6matrix_Matrix3D, /*tp_getset*/
+  __pyx_getsets_8cymatrix_6matrix_Matrix3D, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -12065,9 +12065,9 @@ static PyTypeObject __pyx_type_6matrix_Matrix3D = {
   #if !CYTHON_USE_TYPE_SPECS
   0, /*tp_dictoffset*/
   #endif
-  __pyx_pw_6matrix_8Matrix3D_5__init__, /*tp_init*/
+  __pyx_pw_8cymatrix_6matrix_8Matrix3D_5__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_6matrix_Matrix3D, /*tp_new*/
+  __pyx_tp_new_8cymatrix_6matrix_Matrix3D, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12100,16 +12100,16 @@ static PyTypeObject __pyx_type_6matrix_Matrix3D = {
 };
 #endif
 
-static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct____mul__(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct____mul__(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
   o = alloc_func(t, 0);
   #else
   #if CYTHON_USE_FREELISTS
-  if (likely((int)(__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct____mul__ > 0) & (int)(t->tp_basicsize == sizeof(struct __pyx_obj_6matrix___pyx_scope_struct____mul__)))) {
-    o = (PyObject*)__pyx_mstate_global->__pyx_freelist_6matrix___pyx_scope_struct____mul__[--__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct____mul__];
-    memset(o, 0, sizeof(struct __pyx_obj_6matrix___pyx_scope_struct____mul__));
+  if (likely((int)(__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct____mul__ > 0) & (int)(t->tp_basicsize == sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__)))) {
+    o = (PyObject*)__pyx_mstate_global->__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct____mul__[--__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct____mul__];
+    memset(o, 0, sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__));
     (void) PyObject_INIT(o, t);
   } else
   #endif
@@ -12121,17 +12121,17 @@ static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct____mul__(PyTypeObject *
   return o;
 }
 
-static void __pyx_tp_dealloc_6matrix___pyx_scope_struct____mul__(PyObject *o) {
+static void __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct____mul__(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_6matrix___pyx_scope_struct____mul__) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct____mul__) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
   #endif
   #if CYTHON_USE_FREELISTS
-  if (((int)(__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct____mul__ < 8) & (int)(Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_6matrix___pyx_scope_struct____mul__)))) {
-    __pyx_mstate_global->__pyx_freelist_6matrix___pyx_scope_struct____mul__[__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct____mul__++] = ((struct __pyx_obj_6matrix___pyx_scope_struct____mul__ *)o);
+  if (((int)(__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct____mul__ < 8) & (int)(Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__)))) {
+    __pyx_mstate_global->__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct____mul__[__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct____mul__++] = ((struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__ *)o);
   } else
   #endif
   {
@@ -12146,26 +12146,26 @@ static void __pyx_tp_dealloc_6matrix___pyx_scope_struct____mul__(PyObject *o) {
   }
 }
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_6matrix___pyx_scope_struct____mul___slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_6matrix___pyx_scope_struct____mul__},
-  {Py_tp_new, (void *)__pyx_tp_new_6matrix___pyx_scope_struct____mul__},
+static PyType_Slot __pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul___slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct____mul__},
+  {Py_tp_new, (void *)__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct____mul__},
   {0, 0},
 };
-static PyType_Spec __pyx_type_6matrix___pyx_scope_struct____mul___spec = {
-  "matrix.__pyx_scope_struct____mul__",
-  sizeof(struct __pyx_obj_6matrix___pyx_scope_struct____mul__),
+static PyType_Spec __pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul___spec = {
+  "cymatrix.matrix.__pyx_scope_struct____mul__",
+  sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_FINALIZE,
-  __pyx_type_6matrix___pyx_scope_struct____mul___slots,
+  __pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul___slots,
 };
 #else
 
-static PyTypeObject __pyx_type_6matrix___pyx_scope_struct____mul__ = {
+static PyTypeObject __pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul__ = {
   PyVarObject_HEAD_INIT(0, 0)
-  "matrix.""__pyx_scope_struct____mul__", /*tp_name*/
-  sizeof(struct __pyx_obj_6matrix___pyx_scope_struct____mul__), /*tp_basicsize*/
+  "cymatrix.matrix.""__pyx_scope_struct____mul__", /*tp_name*/
+  sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct____mul__), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_6matrix___pyx_scope_struct____mul__, /*tp_dealloc*/
+  __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct____mul__, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -12205,7 +12205,7 @@ static PyTypeObject __pyx_type_6matrix___pyx_scope_struct____mul__ = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_6matrix___pyx_scope_struct____mul__, /*tp_new*/
+  __pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct____mul__, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12238,16 +12238,16 @@ static PyTypeObject __pyx_type_6matrix___pyx_scope_struct____mul__ = {
 };
 #endif
 
-static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct_1___mul__(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct_1___mul__(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
   o = alloc_func(t, 0);
   #else
   #if CYTHON_USE_FREELISTS
-  if (likely((int)(__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct_1___mul__ > 0) & (int)(t->tp_basicsize == sizeof(struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__)))) {
-    o = (PyObject*)__pyx_mstate_global->__pyx_freelist_6matrix___pyx_scope_struct_1___mul__[--__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct_1___mul__];
-    memset(o, 0, sizeof(struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__));
+  if (likely((int)(__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct_1___mul__ > 0) & (int)(t->tp_basicsize == sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__)))) {
+    o = (PyObject*)__pyx_mstate_global->__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct_1___mul__[--__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct_1___mul__];
+    memset(o, 0, sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__));
     (void) PyObject_INIT(o, t);
   } else
   #endif
@@ -12259,17 +12259,17 @@ static PyObject *__pyx_tp_new_6matrix___pyx_scope_struct_1___mul__(PyTypeObject 
   return o;
 }
 
-static void __pyx_tp_dealloc_6matrix___pyx_scope_struct_1___mul__(PyObject *o) {
+static void __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct_1___mul__(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_6matrix___pyx_scope_struct_1___mul__) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct_1___mul__) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
   #endif
   #if CYTHON_USE_FREELISTS
-  if (((int)(__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct_1___mul__ < 8) & (int)(Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__)))) {
-    __pyx_mstate_global->__pyx_freelist_6matrix___pyx_scope_struct_1___mul__[__pyx_mstate_global->__pyx_freecount_6matrix___pyx_scope_struct_1___mul__++] = ((struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__ *)o);
+  if (((int)(__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct_1___mul__ < 8) & (int)(Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__)))) {
+    __pyx_mstate_global->__pyx_freelist_8cymatrix_6matrix___pyx_scope_struct_1___mul__[__pyx_mstate_global->__pyx_freecount_8cymatrix_6matrix___pyx_scope_struct_1___mul__++] = ((struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__ *)o);
   } else
   #endif
   {
@@ -12284,26 +12284,26 @@ static void __pyx_tp_dealloc_6matrix___pyx_scope_struct_1___mul__(PyObject *o) {
   }
 }
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_6matrix___pyx_scope_struct_1___mul___slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_6matrix___pyx_scope_struct_1___mul__},
-  {Py_tp_new, (void *)__pyx_tp_new_6matrix___pyx_scope_struct_1___mul__},
+static PyType_Slot __pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul___slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct_1___mul__},
+  {Py_tp_new, (void *)__pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct_1___mul__},
   {0, 0},
 };
-static PyType_Spec __pyx_type_6matrix___pyx_scope_struct_1___mul___spec = {
-  "matrix.__pyx_scope_struct_1___mul__",
-  sizeof(struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__),
+static PyType_Spec __pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul___spec = {
+  "cymatrix.matrix.__pyx_scope_struct_1___mul__",
+  sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_FINALIZE,
-  __pyx_type_6matrix___pyx_scope_struct_1___mul___slots,
+  __pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul___slots,
 };
 #else
 
-static PyTypeObject __pyx_type_6matrix___pyx_scope_struct_1___mul__ = {
+static PyTypeObject __pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul__ = {
   PyVarObject_HEAD_INIT(0, 0)
-  "matrix.""__pyx_scope_struct_1___mul__", /*tp_name*/
-  sizeof(struct __pyx_obj_6matrix___pyx_scope_struct_1___mul__), /*tp_basicsize*/
+  "cymatrix.matrix.""__pyx_scope_struct_1___mul__", /*tp_name*/
+  sizeof(struct __pyx_obj_8cymatrix_6matrix___pyx_scope_struct_1___mul__), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_6matrix___pyx_scope_struct_1___mul__, /*tp_dealloc*/
+  __pyx_tp_dealloc_8cymatrix_6matrix___pyx_scope_struct_1___mul__, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -12343,7 +12343,7 @@ static PyTypeObject __pyx_type_6matrix___pyx_scope_struct_1___mul__ = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_6matrix___pyx_scope_struct_1___mul__, /*tp_new*/
+  __pyx_tp_new_8cymatrix_6matrix___pyx_scope_struct_1___mul__, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12429,14 +12429,14 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_6matrix_Matrix2D = &__pyx_vtable_6matrix_Matrix2D;
-  __pyx_vtable_6matrix_Matrix2D._offset = (size_t (*)(struct __pyx_obj_6matrix_Matrix2D *, int, int))__pyx_f_6matrix_8Matrix2D__offset;
-  __pyx_vtable_6matrix_Matrix2D.get = (double (*)(struct __pyx_obj_6matrix_Matrix2D *, int, int, int __pyx_skip_dispatch))__pyx_f_6matrix_8Matrix2D_get;
-  __pyx_vtable_6matrix_Matrix2D.set = (void (*)(struct __pyx_obj_6matrix_Matrix2D *, int, int, double, int __pyx_skip_dispatch))__pyx_f_6matrix_8Matrix2D_set;
+  __pyx_vtabptr_8cymatrix_6matrix_Matrix2D = &__pyx_vtable_8cymatrix_6matrix_Matrix2D;
+  __pyx_vtable_8cymatrix_6matrix_Matrix2D._offset = (size_t (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int))__pyx_f_8cymatrix_6matrix_8Matrix2D__offset;
+  __pyx_vtable_8cymatrix_6matrix_Matrix2D.get = (double (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int, int __pyx_skip_dispatch))__pyx_f_8cymatrix_6matrix_8Matrix2D_get;
+  __pyx_vtable_8cymatrix_6matrix_Matrix2D.set = (void (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix2D *, int, int, double, int __pyx_skip_dispatch))__pyx_f_8cymatrix_6matrix_8Matrix2D_set;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix2D = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_6matrix_Matrix2D_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_6matrix_Matrix2D)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_8cymatrix_6matrix_Matrix2D_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D)) __PYX_ERR(0, 16, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix2D->tp_as_buffer = &__pyx_tp_as_buffer_Matrix2D;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D->tp_as_buffer = &__pyx_tp_as_buffer_Matrix2D;
   #elif defined(Py_bf_getbuffer) && defined(Py_bf_releasebuffer)
   /* PY_VERSION_HEX >= 0x03090000 || Py_LIMITED_API >= 0x030B0000 */
   #elif defined(_MSC_VER)
@@ -12444,32 +12444,32 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   #else
   #warning "The buffer protocol is not supported in the Limited C-API < 3.11."
   #endif
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_6matrix_Matrix2D_spec, __pyx_mstate->__pyx_ptype_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_8cymatrix_6matrix_Matrix2D_spec, __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix2D = &__pyx_type_6matrix_Matrix2D;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D = &__pyx_type_8cymatrix_6matrix_Matrix2D;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_6matrix_Matrix2D->tp_dictoffset && __pyx_mstate->__pyx_ptype_6matrix_Matrix2D->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_6matrix_Matrix2D->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D->tp_dictoffset && __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_6matrix_Matrix2D, __pyx_vtabptr_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Matrix2D_2, (PyObject *) __pyx_mstate->__pyx_ptype_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  __pyx_vtabptr_6matrix_Matrix3D = &__pyx_vtable_6matrix_Matrix3D;
-  __pyx_vtable_6matrix_Matrix3D._offset = (size_t (*)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int))__pyx_f_6matrix_8Matrix3D__offset;
-  __pyx_vtable_6matrix_Matrix3D.get = (double (*)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int, int __pyx_skip_dispatch))__pyx_f_6matrix_8Matrix3D_get;
-  __pyx_vtable_6matrix_Matrix3D.set = (void (*)(struct __pyx_obj_6matrix_Matrix3D *, int, int, int, double, int __pyx_skip_dispatch))__pyx_f_6matrix_8Matrix3D_set;
+  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D, __pyx_vtabptr_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Matrix2D_2, (PyObject *) __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix2D) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_vtabptr_8cymatrix_6matrix_Matrix3D = &__pyx_vtable_8cymatrix_6matrix_Matrix3D;
+  __pyx_vtable_8cymatrix_6matrix_Matrix3D._offset = (size_t (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int))__pyx_f_8cymatrix_6matrix_8Matrix3D__offset;
+  __pyx_vtable_8cymatrix_6matrix_Matrix3D.get = (double (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int, int __pyx_skip_dispatch))__pyx_f_8cymatrix_6matrix_8Matrix3D_get;
+  __pyx_vtable_8cymatrix_6matrix_Matrix3D.set = (void (*)(struct __pyx_obj_8cymatrix_6matrix_Matrix3D *, int, int, int, double, int __pyx_skip_dispatch))__pyx_f_8cymatrix_6matrix_8Matrix3D_set;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix3D = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_6matrix_Matrix3D_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_6matrix_Matrix3D)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_8cymatrix_6matrix_Matrix3D_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D)) __PYX_ERR(0, 253, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix3D->tp_as_buffer = &__pyx_tp_as_buffer_Matrix3D;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D->tp_as_buffer = &__pyx_tp_as_buffer_Matrix3D;
   #elif defined(Py_bf_getbuffer) && defined(Py_bf_releasebuffer)
   /* PY_VERSION_HEX >= 0x03090000 || Py_LIMITED_API >= 0x030B0000 */
   #elif defined(_MSC_VER)
@@ -12477,54 +12477,54 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   #else
   #warning "The buffer protocol is not supported in the Limited C-API < 3.11."
   #endif
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_6matrix_Matrix3D_spec, __pyx_mstate->__pyx_ptype_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_8cymatrix_6matrix_Matrix3D_spec, __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_6matrix_Matrix3D = &__pyx_type_6matrix_Matrix3D;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D = &__pyx_type_8cymatrix_6matrix_Matrix3D;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_6matrix_Matrix3D->tp_dictoffset && __pyx_mstate->__pyx_ptype_6matrix_Matrix3D->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_6matrix_Matrix3D->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D->tp_dictoffset && __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_6matrix_Matrix3D, __pyx_vtabptr_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
-  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Matrix3D_2, (PyObject *) __pyx_mstate->__pyx_ptype_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_vtabptr_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Matrix3D_2, (PyObject *) __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_8cymatrix_6matrix_Matrix3D) < 0) __PYX_ERR(0, 253, __pyx_L1_error)
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__ = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_6matrix___pyx_scope_struct____mul___spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__)) __PYX_ERR(0, 101, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_6matrix___pyx_scope_struct____mul___spec, __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__ = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul___spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__)) __PYX_ERR(0, 101, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul___spec, __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__ = &__pyx_type_6matrix___pyx_scope_struct____mul__;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__ = &__pyx_type_8cymatrix_6matrix___pyx_scope_struct____mul__;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__->tp_dictoffset && __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct____mul__->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__->tp_dictoffset && __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct____mul__->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__ = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_6matrix___pyx_scope_struct_1___mul___spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__)) __PYX_ERR(0, 347, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_6matrix___pyx_scope_struct_1___mul___spec, __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__ = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul___spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__)) __PYX_ERR(0, 347, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul___spec, __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__ = &__pyx_type_6matrix___pyx_scope_struct_1___mul__;
+  __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__ = &__pyx_type_8cymatrix_6matrix___pyx_scope_struct_1___mul__;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__->tp_dictoffset && __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_6matrix___pyx_scope_struct_1___mul__->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__->tp_dictoffset && __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_8cymatrix_6matrix___pyx_scope_struct_1___mul__->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
   __Pyx_RefNannyFinishContext();
@@ -12819,13 +12819,13 @@ __Pyx_RefNannySetupContext("PyInit_matrix", 0);
   if (__pyx_AsyncGen_init(__pyx_m) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   /*--- Library function declarations ---*/
-  if (__pyx_module_is_main_matrix) {
+  if (__pyx_module_is_main_cymatrix__matrix) {
     if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_name, __pyx_mstate_global->__pyx_n_u_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "matrix")) {
-      if (unlikely((PyDict_SetItemString(modules, "matrix", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cymatrix.matrix")) {
+      if (unlikely((PyDict_SetItemString(modules, "cymatrix.matrix", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   /*--- Builtin init code ---*/
@@ -12843,71 +12843,71 @@ __Pyx_RefNannySetupContext("PyInit_matrix", 0);
   (void)__Pyx_modinit_function_import_code(__pyx_mstate);
   /*--- Execution code ---*/
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_47apply, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_apply, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[8])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_47apply, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_apply, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[8])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_mstate_global->__pyx_tuple[0]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_apply, __pyx_t_2) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_apply, __pyx_t_2) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_49apply_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_apply_inplace, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_49apply_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_apply_inplace, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_mstate_global->__pyx_tuple[0]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_apply_inplace, __pyx_t_2) < 0) __PYX_ERR(0, 214, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_apply_inplace, __pyx_t_2) < 0) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_51get, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_get, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_51get, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_get, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_get, __pyx_t_2) < 0) __PYX_ERR(0, 241, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_get, __pyx_t_2) < 0) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_53set, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_set, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 244, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_53set, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D_set, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_set, __pyx_t_2) < 0) __PYX_ERR(0, 244, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix2D, __pyx_mstate_global->__pyx_n_u_set, __pyx_t_2) < 0) __PYX_ERR(0, 244, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_55__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_reduce_cython, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 3, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix2D_57__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix2D___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_2) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_45apply, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_apply, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 447, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_45apply, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_apply, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 447, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_mstate_global->__pyx_tuple[0]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_apply, __pyx_t_2) < 0) __PYX_ERR(0, 447, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_apply, __pyx_t_2) < 0) __PYX_ERR(0, 447, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_47apply_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_apply_inplace, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 465, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_47apply_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_apply_inplace, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 465, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_mstate_global->__pyx_tuple[0]);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_apply_inplace, __pyx_t_2) < 0) __PYX_ERR(0, 465, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_apply_inplace, __pyx_t_2) < 0) __PYX_ERR(0, 465, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_49offset, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_offset, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[16])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 497, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_49offset, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_offset, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[16])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 497, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_offset, __pyx_t_2) < 0) __PYX_ERR(0, 497, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_offset, __pyx_t_2) < 0) __PYX_ERR(0, 497, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_51get, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_get, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[17])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_51get, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_get, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[17])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 500, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_get, __pyx_t_2) < 0) __PYX_ERR(0, 500, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_get, __pyx_t_2) < 0) __PYX_ERR(0, 500, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_53set, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_set, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 503, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_53set, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D_set, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 503, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_set, __pyx_t_2) < 0) __PYX_ERR(0, 503, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_8cymatrix_6matrix_Matrix3D, __pyx_mstate_global->__pyx_n_u_set, __pyx_t_2) < 0) __PYX_ERR(0, 503, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_55__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_reduce_cython, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 3, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_8cymatrix_6matrix_8Matrix3D_57__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Matrix3D___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_cymatrix_matrix, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_2) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -12924,7 +12924,7 @@ __Pyx_RefNannySetupContext("PyInit_matrix", 0);
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_mstate->__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init matrix", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cymatrix.matrix", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -12938,7 +12938,7 @@ __Pyx_RefNannySetupContext("PyInit_matrix", 0);
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init matrix");
+    PyErr_SetString(PyExc_ImportError, "init cymatrix.matrix");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -13025,6 +13025,7 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 1, 1}, /* PyObject cname: __pyx_n_u_cline_in_traceback */
   {__pyx_k_col, sizeof(__pyx_k_col), 0, 1, 1}, /* PyObject cname: __pyx_n_u_col */
   {__pyx_k_cols, sizeof(__pyx_k_cols), 0, 1, 1}, /* PyObject cname: __pyx_n_u_cols */
+  {__pyx_k_cymatrix_matrix, sizeof(__pyx_k_cymatrix_matrix), 0, 1, 1}, /* PyObject cname: __pyx_n_u_cymatrix_matrix */
   {__pyx_k_disable, sizeof(__pyx_k_disable), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_disable */
   {__pyx_k_enable, sizeof(__pyx_k_enable), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_enable */
   {__pyx_k_eq, sizeof(__pyx_k_eq), 0, 1, 1}, /* PyObject cname: __pyx_n_u_eq */
@@ -13040,8 +13041,6 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_k, sizeof(__pyx_k_k), 0, 1, 1}, /* PyObject cname: __pyx_n_u_k */
   {__pyx_k_lambda, sizeof(__pyx_k_lambda), 0, 1, 1}, /* PyObject cname: __pyx_n_u_lambda */
   {__pyx_k_main, sizeof(__pyx_k_main), 0, 1, 1}, /* PyObject cname: __pyx_n_u_main */
-  {__pyx_k_matrix, sizeof(__pyx_k_matrix), 0, 1, 1}, /* PyObject cname: __pyx_n_u_matrix */
-  {__pyx_k_matrix_pyx, sizeof(__pyx_k_matrix_pyx), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_matrix_pyx */
   {__pyx_k_module, sizeof(__pyx_k_module), 0, 1, 1}, /* PyObject cname: __pyx_n_u_module */
   {__pyx_k_mul, sizeof(__pyx_k_mul), 0, 1, 1}, /* PyObject cname: __pyx_n_u_mul */
   {__pyx_k_mul___locals_lambda, sizeof(__pyx_k_mul___locals_lambda), 0, 1, 1}, /* PyObject cname: __pyx_n_u_mul___locals_lambda */
@@ -13070,6 +13069,7 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_set_name, sizeof(__pyx_k_set_name), 0, 1, 1}, /* PyObject cname: __pyx_n_u_set_name */
   {__pyx_k_setstate, sizeof(__pyx_k_setstate), 0, 1, 1}, /* PyObject cname: __pyx_n_u_setstate */
   {__pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 1, 1}, /* PyObject cname: __pyx_n_u_setstate_cython */
+  {__pyx_k_src_cymatrix_matrix_pyx, sizeof(__pyx_k_src_cymatrix_matrix_pyx), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_src_cymatrix_matrix_pyx */
   {__pyx_k_stringsource, sizeof(__pyx_k_stringsource), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_stringsource */
   {__pyx_k_sub___locals_lambda, sizeof(__pyx_k_sub___locals_lambda), 0, 1, 1}, /* PyObject cname: __pyx_n_u_sub___locals_lambda */
   {__pyx_k_test, sizeof(__pyx_k_test), 0, 1, 1}, /* PyObject cname: __pyx_n_u_test */
@@ -13150,62 +13150,62 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 94, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j};
-    __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 99, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j};
-    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 102, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j};
-    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_IRq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 195, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j};
-    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_Cq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_Cq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {5, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 338, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[4] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[4])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[4] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[4])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {5, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 345, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[5] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[5])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[5] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[5])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {5, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 348, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[6] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[6])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[6] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_y, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[6])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {5, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 445, 9};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[7] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_s_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[7])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[7] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_lambda, __pyx_k_s_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[7])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 9, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 197, 139};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_func_2, __pyx_mstate->__pyx_n_u_other, __pyx_mstate->__pyx_n_u_result, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_result_val};
-    __pyx_mstate_global->__pyx_codeobj_tab[8] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_apply, __pyx_k_0_xq_BgT_1_E_at2Q_U_4r_4t1Cq_6, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[8])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[8] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_apply, __pyx_k_0_xq_BgT_1_E_at2Q_U_4r_4t1Cq_6, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[8])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 8, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 214, 115};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_func_2, __pyx_mstate->__pyx_n_u_other, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_result_val};
-    __pyx_mstate_global->__pyx_codeobj_tab[9] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_apply_inplace, __pyx_k_8_E_at2Q_U_4r_4t1Cq_6_T_Q_Qj_3a, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[9])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[9] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_apply_inplace, __pyx_k_8_E_at2Q_U_4r_4t1Cq_6_T_Q_Qj_3a, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[9])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 241, 23};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j};
-    __pyx_mstate_global->__pyx_codeobj_tab[10] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_get, __pyx_k_A_t2U_4xq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[10])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[10] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_get, __pyx_k_A_t2U_4xq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[10])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 244, 23};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_value};
-    __pyx_mstate_global->__pyx_codeobj_tab[11] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_set, __pyx_k_A_Be1D_6, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[11])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[11] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_set, __pyx_k_A_Be1D_6, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[11])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 1, 9};
@@ -13220,27 +13220,27 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 10, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 447, 170};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_func_2, __pyx_mstate->__pyx_n_u_other, __pyx_mstate->__pyx_n_u_result, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k, __pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_result_val};
-    __pyx_mstate_global->__pyx_codeobj_tab[14] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_apply, __pyx_k_0_xq_BgT_7_b_E_at2Q_U_4r_E_at2Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[14])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[14] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_apply, __pyx_k_0_xq_BgT_7_b_E_at2Q_U_4r_E_at2Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[14])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 9, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 465, 140};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_func_2, __pyx_mstate->__pyx_n_u_other, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k, __pyx_mstate->__pyx_n_u_self_val, __pyx_mstate->__pyx_n_u_other_val, __pyx_mstate->__pyx_n_u_result_val};
-    __pyx_mstate_global->__pyx_codeobj_tab[15] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_apply_inplace, __pyx_k_8_E_at2Q_U_4r_E_at2Q_t4q_3a_vWA, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[15])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[15] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_apply_inplace, __pyx_k_8_E_at2Q_U_4r_E_at2Q_t4q_3a_vWA, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[15])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 497, 17};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_row, __pyx_mstate->__pyx_n_u_col, __pyx_mstate->__pyx_n_u_plane};
-    __pyx_mstate_global->__pyx_codeobj_tab[16] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_offset, __pyx_k_A_t81E_a, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[16])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[16] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_offset, __pyx_k_A_t81E_a, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[16])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {4, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 500, 25};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[17] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_get, __pyx_k_A_t2U_4xq_A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[17])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[17] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_get, __pyx_k_A_t2U_4xq_A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[17])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {5, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 503, 25};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k, __pyx_mstate->__pyx_n_u_value};
-    __pyx_mstate_global->__pyx_codeobj_tab[18] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_matrix_pyx, __pyx_mstate->__pyx_n_u_set, __pyx_k_A_Be1D_2V1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[18])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[18] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_src_cymatrix_matrix_pyx, __pyx_mstate->__pyx_n_u_set, __pyx_k_A_Be1D_2V1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[18])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 1, 9};

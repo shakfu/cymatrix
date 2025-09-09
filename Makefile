@@ -1,16 +1,22 @@
 
-.PHONY: all build clean test
+.PHONY: all build wheel clean test reset
 
 all: build
 
 
 build:
-	@python3 setup.py build_ext --inplace
+	@uv run python setup.py build_ext --inplace
 
+wheel:
+	@uv build
 
 clean:
-	@rm -rf build *.so __pycache__ .*_cache
+	@rm -rf build dist *.so src/**/*.so __pycache__ .*_cache src/*.egg-info
+
+
+reset: clean
+	@rm -rf .venv
 
 
 test:
-	@python3 -m pytest
+	@uv run python -m pytest

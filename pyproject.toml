@@ -1,0 +1,32 @@
+[project]
+name = "cymatrix"
+version = "0.1.0"
+description = "An illustrative matrix library implemented in Cython"
+readme = "README.md"
+authors = [
+    { name = "Shakeeb Alireza", email = "me@example.org" }
+]
+requires-python = ">=3.6"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = ['pytest', 'pytest-cov']
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "cython>=3.0.12",
+    "numpy>=1.19.5",
+    "pytest>=7.0.1",
+    "setuptools>=59.6.0",
+]
