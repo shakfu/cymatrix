@@ -20,10 +20,10 @@ An illustrative matrix library implemented in Cython, providing 2D and 3D matrix
 
 ### Prerequisites
 
-- Python 3.6+
-- uv 
-- Cython
-- NumPy (optional)
+- [Python](https://python.org) 3.6+
+- [uv](https://github.com/astral-sh/uv)
+- [Cython](https://cython.org)
+- [NumPy](https://numpy.org) (optional)
 - A C compiler (GCC, Clang, or MSVC)
 
 ### Build from Source
